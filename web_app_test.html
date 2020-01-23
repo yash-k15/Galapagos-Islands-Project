@@ -8,15 +8,23 @@
 
 <h2>HTML Forms</h2>
 
-<form action="/action_page.php">
+<form id="submit1">
     First name:<br>
-    <input type="text" name="firstname" value="Mickey">
+    <input id= "firstname" type="text" name="firstname" value="Mickey">
     <br>
-    Last name:<br>
-    <input type="text" name="lastname" value="Mouse">
     <br><br>
-    <input type="submit" value="Submit">
+    <button type="submit" id="pushMe"> Submit! </button>
 </form>
 
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+
+
+<script src="web_app_test.js"></script>
 </body>
 </html>
