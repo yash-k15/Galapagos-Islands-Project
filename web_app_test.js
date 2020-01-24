@@ -1,7 +1,6 @@
-
-var firebase = require("firebase/app");
-require("firebase/auth");
-require("firebase/database")
+//const firebase = require("firebase");
+// Required for side-effects
+//require("firebase/firestore");
 
 
 var firebaseConfig = {
@@ -14,21 +13,41 @@ var firebaseConfig = {
     appId: "1:163908843066:web:312213cb4e174967c5a703",
     measurementId: "G-ZRHVMMMDQN"
 };
-// Initialize Firebase
+
 firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+// Initialize Firebase
 
-var messagesRef = firebase.database().ref("test/firstname");
+const db = firebase.firestore();
 
-document.getElementById("pushMe").addEventListener("click", submitForm);
+document.getElementById("pushMe").addEventListener("click", function submitForm(){
+    var first_name = document.getElementById("firstname").value;
+    var last_name = document.getElementById("lastname").value;
+    console.log(first_name, last_name);
+    saveMessage(first_name, last_name);
+    getMessage();
+});
 
-function submitForm(){
-    var name = document.getElementById("firstname").value;
-    window.alert(name);
-    saveMessage(name);
+function saveMessage(first_name, last_name){
+    db.collection("test").doc("test_user").set({
+        first_name: first_name,
+        last_name : last_name
+    }).then(function(){
+        console.log("User saved!");
+    }).catch(function(error){
+        console.log("Error: ", error);
+    });
 }
 
-function saveMessage(name){
-        var newMessageRef = messagesRef.push();
-        newMessageRef.set({name: name});
+function getMessage(){
+    db.collection("test").doc("test_user").get().then(function(doc) {
+        if (doc.exists) {
+            console.log("Document data:", doc.data());
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }).catch(function(error) {
+        console.log("Error getting document:", error);
+    });
+    console.log("GOODBYE!");
 }
