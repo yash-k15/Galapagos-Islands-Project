@@ -3,7 +3,7 @@
 //require("firebase/firestore");
 
 
-var firebaseConfig = {
+firebase.initializeApp({
     apiKey: "AIzaSyAXVrby0nuyxqWAOEhNK78bwQzEW-lxQEQ",
     authDomain: "galapago-26360.firebaseapp.com",
     databaseURL: "https://galapago-26360.firebaseio.com",
@@ -12,23 +12,38 @@ var firebaseConfig = {
     messagingSenderId: "163908843066",
     appId: "1:163908843066:web:312213cb4e174967c5a703",
     measurementId: "G-ZRHVMMMDQN"
-};
+});
 
-firebase.initializeApp(firebaseConfig);
-// Initialize Firebase
+var db = firebase.firestore();
+var docRef = db.doc("test/test_user");
 
-const db = firebase.firestore();
+docRef.set({
+    first_name: "",
+    last_name : ""
+}).then(function(){
+    console.log("User saved!");
+}).catch(function(error){
+    console.log("Error: ", error);
+});
 
 document.getElementById("pushMe").addEventListener("click", function submitForm(){
     var first_name = document.getElementById("firstname").value;
     var last_name = document.getElementById("lastname").value;
     console.log(first_name, last_name);
-    saveMessage(first_name, last_name);
-    getMessage();
+    docRef = db.collection("test").doc("test_user3");
+    docRef.set({
+        first_name: first_name,
+        last_name : last_name
+    }).then(function(){
+        console.log("User saved!");
+    }).catch(function(error){
+        console.log("Error: ", error);
+    });
+    console.log("GOODBYE!");
 });
 
-function saveMessage(first_name, last_name){
-    db.collection("test").doc("test_user").set({
+/*function saveMessage(first_name, last_name){
+    db.collection("test").doc("test_user3").set({
         first_name: first_name,
         last_name : last_name
     }).then(function(){
@@ -39,7 +54,7 @@ function saveMessage(first_name, last_name){
 }
 
 function getMessage(){
-    db.collection("test").doc("test_user").get().then(function(doc) {
+    db.collection("test").doc("test_user3").get().then(function(doc) {
         if (doc.exists) {
             console.log("Document data:", doc.data());
         } else {
@@ -50,4 +65,5 @@ function getMessage(){
         console.log("Error getting document:", error);
     });
     console.log("GOODBYE!");
-}
+} */
+
