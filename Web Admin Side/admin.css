@@ -1,3 +1,4 @@
+/*------------------ SIDEBAR -------------------*/
 .sidebar{
     position: absolute;
     width: 400px;
@@ -8,12 +9,22 @@
     background: #0C7A80;
 }
 
+img{
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    left: 59px;
+    top: 77px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
 h1{
     position: absolute;
     width: 185px;
     height: 38px;
     left: 180px;
-    top: 92px;
+    top: 85px;
 
     font-family: Open Sans, sans-serif;
     font-style: normal;
@@ -38,6 +49,15 @@ h2{
     line-height: 30px;
 
     color: #FFFFFF;
+}
+
+hr{
+    position: absolute;
+    width: 494px;
+    height: 0px;
+    top: 250px;
+
+    border: 0.5px solid #FFFFFF;
 }
 
 h3{
@@ -70,21 +90,13 @@ h4{
     color: #FFFFFF;
 }
 
+
 #learnHeader{
     top: 369px;
 }
 
 #explore{
     top: 492px;
-}
-
-hr{
-    position: absolute;
-    width: 494px;
-    height: 0px;
-    top: 250px;
-
-    border: 0.5px solid #FFFFFF;
 }
 
 .links{
@@ -138,6 +150,7 @@ hr{
     color: #FFFFFF;
 }
 
+/*------------------ PLAN YOUR TRIP PAGE -------------------*/
 #planYourTrip{
     width: 256px;
     left: 500px;
@@ -181,60 +194,52 @@ h7{
 
 #islandHop{
     left: 500px;
-    top: 226px;
+    top: 200px;
 }
 
 #chooseIsland{
-    top: 266px;
+    top: 240px;
 }
 
 #chooseCategory{
-    top: 423px;
+    top: 393px;
 }
-
-#hotels{
-    left: 500px;
-    top: 620px;
-}
-
-#hotelName{
-    top: 661px;
-}
-
-#hotelAddress{
-    left: 970px;
-    top: 661px;
-}
-
-#hotelNumber{
-    top: 815px;
-}
-
-#hotelEmail{
-    left: 972px;
-    top: 815px;
-}
-
-#hotelWebsite{
-    top: 969px;
-}
-
 
 select{
     position: absolute;
     width: 230px;
     height: 53px;
     left: 500px;
-    top: 350px;
+    top: 330px;
 
     background: #FFFFFF;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
+    font-family: Open Sans,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+
 }
 
 #categorySelect{
-    top: 500px;
+    top: 480px;
+}
+
+#hotels{
+    left: 500px;
+    top: 580px;
+}
+
+#hotelName{
+    top: 620px;
+}
+
+#hotelAddress{
+    left: 970px;
+    top: 620px;
 }
 
 #hotelNameInput{
@@ -242,7 +247,7 @@ select{
     width: 300px;
     height: 43px;
     left: 500px;
-    top: 735px;
+    top: 695px;
 
     background: #FFFFFF;
     border: 1px solid #D1D1D1;
@@ -255,7 +260,7 @@ select{
     width: 300px;
     height: 43px;
     left: 968px;
-    top: 735px;
+    top: 695px;
 
     background: #FFFFFF;
     border: 1px solid #D1D1D1;
@@ -263,12 +268,21 @@ select{
     border-radius: 10px;
 }
 
+#hotelNumber{
+    top: 745px;
+}
+
+#hotelEmail{
+    left: 972px;
+    top: 745px;
+}
+
 #hotelNumberInput{
     position: absolute;
     width: 300px;
     height: 43px;
     left: 500px;
-    top: 889px;
+    top: 820px;
 
     background: #FFFFFF;
     border: 1px solid #D1D1D1;
@@ -281,7 +295,7 @@ select{
     width: 300px;
     height: 43px;
     left: 970px;
-    top: 889px;
+    top: 820px;
 
     background: #FFFFFF;
     border: 1px solid #D1D1D1;
@@ -289,12 +303,16 @@ select{
     border-radius: 10px;
 }
 
+#hotelWebsite{
+    top: 870px;
+}
+
 #hotelWebsiteInput{
     position: absolute;
     width: 300px;
     height: 43px;
     left: 500px;
-    top: 1043px;
+    top: 945px;
 
     background: #FFFFFF;
     border: 1px solid #D1D1D1;
@@ -307,7 +325,7 @@ select{
     width: 168px;
     height: 48px;
     left: 500px;
-    top: 1124px;
+    top: 1045px;
 
     background: #0C7A80;
     border-radius: 10px;
