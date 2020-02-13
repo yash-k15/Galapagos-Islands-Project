@@ -7,11 +7,11 @@ import Explore from "./screens/explore/Explore";
 
 
 const ProjectNavigation= createStackNavigator({
-  Learn: {
-   screen: Learn
-  },
   Explore: {
     screen: Explore
+  },
+  Learn: {
+   screen: Learn
   }
 });
 
