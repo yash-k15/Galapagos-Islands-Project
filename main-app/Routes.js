@@ -26,8 +26,8 @@ const TabNavigator = createBottomTabNavigator({
             tabBarLabel: "Explore",
             tabBarIcon: ({tintcolor}) => (
                 <Image
-                    source={require('./app/assets/icons/turtle.png')}
-                    style={{width: 25, height: 25}}
+                    source={require('./app/assets/icons/compass.png')}
+                    style={{width: 30, height: 30}}
                 />
             )
         }
@@ -38,8 +38,8 @@ const TabNavigator = createBottomTabNavigator({
             tabBarLabel: "Learn",
             tabBarIcon: ({tintcolor}) => (
                 <Image
-                    source={require('./app/assets/icons/turtle.png')}
-                    style={{width: 25, height: 25}}
+                    source={require('./app/assets/icons/galapagos.png')}
+                    style={{width: 30, height: 30}}
                 />
             )
         }

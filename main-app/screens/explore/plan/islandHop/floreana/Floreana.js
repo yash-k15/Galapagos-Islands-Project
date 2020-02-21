@@ -10,11 +10,11 @@ const styles = StyleSheet.create ({
   }
 });
 
-class Explore extends React.Component {
+class Floreana extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Explore Screen</Text>
+        <Text>Floreana Screen</Text>
         <Button
           title="Go to Learn"
           onPress={() => this.props.navigation.navigate("Learn")}
@@ -24,4 +24,4 @@ class Explore extends React.Component {
   }
 }
 
-export default Explore;
+export default Floreana;

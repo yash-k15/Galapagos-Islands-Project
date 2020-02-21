@@ -10,11 +10,11 @@ const styles = StyleSheet.create ({
   }
 });
 
-class Explore extends React.Component {
+class Language extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Explore Screen</Text>
+        <Text>Language Screen</Text>
         <Button
           title="Go to Learn"
           onPress={() => this.props.navigation.navigate("Learn")}
@@ -24,4 +24,4 @@ class Explore extends React.Component {
   }
 }
 
-export default Explore;
+export default Language;
