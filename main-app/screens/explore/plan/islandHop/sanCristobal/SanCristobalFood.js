@@ -10,7 +10,7 @@ const styles = StyleSheet.create ({
   }
 });
 
-class Explore extends React.Component {
+class SanCristobalFood extends React.Component {
   render(){
     return (
       <View style={styles.container}>
@@ -24,4 +24,4 @@ class Explore extends React.Component {
   }
 }
 
-export default Explore;
+export default SanCristobalFood;
