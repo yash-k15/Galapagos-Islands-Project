@@ -2,87 +2,72 @@ import React, { Component } from "react";
 import { createAppContainer } from 'react-navigation';
 import { createStackNavigator} from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
-import { Ionicons } from '@expo/vector-icons';
 import { Image } from 'react-native';
 
+import Favorites from "./screens/favorites/Favorites"
 import Learn from "./screens/learn/Learn";
 import Explore from "./screens/explore/Explore";
-import {Icon} from "expo";
+import AboutUs from "./screens/learn/AboutUs";
 
 
-/*const ProjectNavigation= createStackNavigator({
-  Explore: {
-    screen: Explore
-  },
+
+const LearnSection = createStackNavigator({
   Learn: {
    screen: Learn
-  }
-}); */
-
-const TabNavigator = createBottomTabNavigator({
-    Explore: {
-        screen: Explore,
-        navigationOptions:{
-            tabBarLabel: "Explore",
-            tabBarIcon: ({tintcolor}) => (
-                <Image
-                    source={require('./app/assets/icons/compass.png')}
-                    style={{width: 30, height: 30}}
-                />
-            )
-        }
-    },
-    Learn: {
-        screen: Learn,
-        navigationOptions:{
-            tabBarLabel: "Learn",
-            tabBarIcon: ({tintcolor}) => (
-                <Image
-                    source={require('./app/assets/icons/galapagos.png')}
-                    style={{width: 30, height: 30}}
-                />
-            )
-        }
+  },
+    AboutUs:{
+      screen: AboutUs
     }
 });
 
-export default createAppContainer(TabNavigator)
+LearnSection.navigationOptions = ({ navigation }) => {
+    return {
+        tabBarLabel: "Learn",
+        tabBarIcon: ({tintcolor}) => (
+            <Image
+                source={require('./app/assets/icons/galapagos.png')}
+                style={{width: 30, height: 30}}
+            />
+        )
+    };
+};
 
-/*function MyTabs(){
-    return(
-        <Tab.Navigator>
-            <Tab.Screen name="Learn" component={Learn}/>
-            <Tab.Screen name="Explore" component={Explore}/>
-        </Tab.Navigator>
-    );
-}
+const ExploreSection = createStackNavigator({
+    Explore: {screen: Explore}
+});
 
-export default MyTabs;
-   {
-        Learn:{
-            screen: Learn,
-            navigationOptions:{
-                tabBarIcon: ({tintColor}) =>(
-                    <Icon name={'./assets/icons/galapagos.svg'} size={25} color={tintColor}/>
-                )
-            }
-        },
-        Explore: {
-            screen: Explore,
-            navigationOptions:{
-                tabBarIcon: ({tintColor}) => (
-                    <Icon name={'./assets/icons/compass.svg'} size={25} color={tintColor}/>
-                )
-            }
-        }
-    },
-    {
-        tabBarOptions: {
-            activeTintColor: '#FF6F00',
-            inactiveTintColor: '#263238',
-        },
+ExploreSection.navigationOptions = ({navigation}) => {
+    return{
+        tabBarLabel: "Explore",
+        tabBarIcon: ({tintcolor}) => (
+            <Image
+                source={require('./app/assets/icons/compass.png')}
+                style={{width: 30, height: 30}}
+            />
+        )
     }
-);
+};
 
-export default createAppContainer(bottomTabNavigator);
-export default createAppContainer(ProjectNavigation); */
+const FavoritesSection = createStackNavigator({
+   Favorites : {screen: Favorites}
+});
+
+FavoritesSection.navigationOptions = ({navigation}) => {
+    return{
+        tabBarLabel: "Favorites",
+        tabBarIcon: ({tintcolor}) => (
+            <Image
+                source={require('./app/assets/icons/turtle.png')}
+                style={{width: 30, height: 30}}
+            />
+        )
+    }
+};
+
+const TabNavigator = createBottomTabNavigator({
+    Explore: ExploreSection,
+    Learn: LearnSection,
+    Favorites: FavoritesSection
+});
+
+export default createAppContainer(TabNavigator)

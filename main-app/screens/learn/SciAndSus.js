@@ -1,10 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import { StyleSheet, Button, Text, View } from 'react-native';
-import AboutUs from './AboutUs';
-
-
-
 
 const styles = StyleSheet.create ({
     title: {
