@@ -14,7 +14,7 @@ class Customs extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Norms Screen</Text>
+        <Text>Customs Screen</Text>
         <Button
           title="Go to Learn"
           onPress={() => this.props.navigation.navigate("Learn")}
