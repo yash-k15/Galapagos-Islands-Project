@@ -3,6 +3,9 @@ import * as React from 'react';
 import { StyleSheet, Button, Text, View } from 'react-native';
 
 const styles = StyleSheet.create ({
+    title: {
+        textAlign:'left'
+    },
   container: {
       flex: 1,
       justifyContent: "center",
@@ -10,18 +13,14 @@ const styles = StyleSheet.create ({
   }
 });
 
-class Norms extends React.Component {
+class Learn extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Norms Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
+        <Text>Favorites</Text>
       </View>
     );
   }
 }
 
-export default Norms;
+export default Learn;
