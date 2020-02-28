@@ -10,7 +10,7 @@ const styles = StyleSheet.create ({
   }
 });
 
-class Norms extends React.Component {
+class Customs extends React.Component {
   render(){
     return (
       <View style={styles.container}>
@@ -24,4 +24,4 @@ class Norms extends React.Component {
   }
 }
 
-export default Norms;
+export default Customs;
