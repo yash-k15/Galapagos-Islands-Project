@@ -78,8 +78,8 @@ FavoritesSection.navigationOptions = ({navigation}) => {
 };
 
 const TabNavigator = createBottomTabNavigator({
-    Explore: ExploreSection,
     Learn: LearnSection,
+    Explore: ExploreSection,
     Favorites: FavoritesSection
 });
 
