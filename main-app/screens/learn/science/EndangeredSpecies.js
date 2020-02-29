@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View, ScrollView } from 'react-native';
 
 const styles = StyleSheet.create ({
   container: {
@@ -14,11 +14,14 @@ class EndangeredSpecies extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Explore Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
+          <ScrollView>
+            <Text>Endangered Species Screen</Text>
+            <Text>PICTURES SLIDE HERE</Text>
+            <Text>The causes of this phenomenon are diverse, ranging from illegal hunting, the introduction of alien
+                species to the islands, the unconsciousness of certain tourists and inhabitants of the area, to climate
+                change that generates harmful variations in the levels of oxygen and other gases at the bottom of
+                the sea.</Text>
+          </ScrollView>
       </View>
     );
   }

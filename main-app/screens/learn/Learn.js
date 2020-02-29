@@ -1,10 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import { StyleSheet, Button, Text, View } from 'react-native';
-import AboutUs from './AboutUs';
-
-
-
 
 const styles = StyleSheet.create ({
     title: {
@@ -28,7 +24,7 @@ class Learn extends React.Component {
         />
           <Button
               title="Science & Sustainability"
-              onPress={() => this.props.navigation.navigate("SciAndSus")}
+              onPress={() => this.props.navigation.navigate("ScienceAndSus")}
           />
           <Button
               title="History"
