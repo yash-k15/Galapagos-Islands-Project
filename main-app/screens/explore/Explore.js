@@ -16,9 +16,13 @@ class Explore extends React.Component {
       <View style={styles.container}>
         <Text>Explore Screen</Text>
         <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
+          title="Know Before You Go"
+          onPress={() => this.props.navigation.navigate("KnowBefore")}
         />
+          <Button
+              title="Plan Your Trip"
+              onPress={() => this.props.navigation.navigate("Plan")}
+          />
       </View>
     );
   }

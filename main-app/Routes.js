@@ -25,6 +25,7 @@ import KnowBefore from "./screens/explore/know/KnowBefore";
 import Language from "./screens/explore/know/Language";
 import Customs from "./screens/explore/know/Customs";
 import Rules from "./screens/explore/know/Rules";
+import Plan from "./screens/explore/plan/Plan";
 
 
 const LearnSection = createStackNavigator({
@@ -59,7 +60,8 @@ const ExploreSection = createStackNavigator({
     KnowBefore : {screen: KnowBefore},
     Language : {screen: Language},
     Customs : {screen: Customs},
-    Rules : {screen: Rules}
+    Rules : {screen: Rules},
+    Plan : {screen: Plan}
 });
 
 ExploreSection.navigationOptions = ({navigation}) => {

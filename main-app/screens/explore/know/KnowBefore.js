@@ -20,11 +20,27 @@ class KnowBefore extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Explore Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
+          <ScrollView>
+            <Text>Explore Screen</Text>
+            <Button
+              title="Language"
+              onPress={() => this.props.navigation.navigate("Language")}
+            />
+              <Button
+                  title="Cultural & Social Customs"
+                  onPress={() => this.props.navigation.navigate("Customs")}
+              />
+              <Button
+                  title="Rules of the National Park"
+                  onPress={() => this.props.navigation.navigate("Rules")}
+              />
+              <Text>Internet & Connectivity</Text>
+              <Text>Internet connection can be obtained in all places of accommodation / restaurants. The internet in
+                  Puerto Ayora is satellite, therefore we do not have a fiber optic connection which can make it
+                  slow.</Text>
+              <Text>Have an Emergency?</Text>
+              <Text>911</Text>
+          </ScrollView>
       </View>
     );
   }

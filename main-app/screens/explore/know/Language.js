@@ -15,10 +15,6 @@ class Language extends React.Component {
     return (
       <View style={styles.container}>
         <Text>Language Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
       </View>
     );
   }

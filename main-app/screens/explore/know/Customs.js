@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View, ScrollView } from 'react-native';
 
 const styles = StyleSheet.create ({
   container: {
@@ -14,11 +14,9 @@ class Customs extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Customs Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
+          <ScrollView>
+            <Text>Cultural & Social Customs Screen</Text>
+          </ScrollView>
       </View>
     );
   }
