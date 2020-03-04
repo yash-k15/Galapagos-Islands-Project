@@ -10,24 +10,17 @@ const styles = StyleSheet.create ({
   }
 });
 
-class Plan extends React.Component {
+class Camping extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-          <Text>Plan Your Trip</Text>
+          <Text>Camping</Text>
           <ScrollView>
-            <Button
-              title="Top Activities"
-              onPress={() => this.props.navigation.navigate("TopActivities")}
-            />
-              <Button
-                  title="Island Hop"
-                  onPress={() => this.props.navigation.navigate("IslandHop")}
-              />
+            <Text>There are several places where you can camp with prior written authorization from the PNG Directorate, in Santa Cruz, San Cristóbal and Isabela.</Text>
           </ScrollView>
       </View>
     );
   }
 }
 
-export default Plan;
+export default Camping;

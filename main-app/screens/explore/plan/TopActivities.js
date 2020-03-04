@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View, ScrollView } from 'react-native';
 
 const styles = StyleSheet.create ({
   container: {
@@ -14,11 +14,43 @@ class TopActivities extends React.Component {
   render(){
     return (
       <View style={styles.container}>
-        <Text>Explore Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
+          <Text>Top Activities</Text>
+          <ScrollView>
+              <Text>Land</Text>
+            <Button
+              title="Cycling"
+              onPress={() => this.props.navigation.navigate("Cycling")}
+            />
+            <Button
+              title="Camping"
+              onPress={() => this.props.navigation.navigate("Camping")}
+            />
+            <Button
+              title="Hiking"
+              onPress={() => this.props.navigation.navigate("Hiking")}
+            />
+              <Text>Sea</Text>
+            <Button
+                title="Cruise"
+                onPress={() => this.props.navigation.navigate("Cruise")}
+            />
+            <Button
+              title="Diving"
+              onPress={() => this.props.navigation.navigate("Diving")}
+          />
+          <Button
+              title="Surfing"
+              onPress={() => this.props.navigation.navigate("Surfing")}
+          />
+          <Button
+              title="Kayaking"
+              onPress={() => this.props.navigation.navigate("Kayaking")}
+          />
+          <Button
+              title="Fishing"
+              onPress={() => this.props.navigation.navigate("Fishing")}
+          />
+          </ScrollView>
       </View>
     );
   }

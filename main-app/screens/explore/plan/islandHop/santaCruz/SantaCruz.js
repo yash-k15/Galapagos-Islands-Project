@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, Button, Text, View } from 'react-native';
+import {StyleSheet, Button, Text, View, ScrollView} from 'react-native';
 
 const styles = StyleSheet.create ({
   container: {
@@ -13,13 +13,28 @@ const styles = StyleSheet.create ({
 class SantaCruz extends React.Component {
   render(){
     return (
-      <View style={styles.container}>
-        <Text>Explore Screen</Text>
-        <Button
-          title="Go to Learn"
-          onPress={() => this.props.navigation.navigate("Learn")}
-        />
-      </View>
+        <View style={styles.container}>
+            <Text>Island Hop</Text>
+            <Text>Santa Cruz Island</Text>
+            <ScrollView>
+                <Text>WEATHER TAB HERE</Text>
+                <Text>Explore</Text>
+                <Button
+                    title="Top Activities"
+                    onPress={() => this.props.navigation.navigate("SantaCruzTop")}
+                />
+                <Text>Eat & Drink</Text>
+                <Button
+                    title="Food & Drinks"
+                    onPress={() => this.props.navigation.navigate("SantaCruzFood")}
+                />
+                <Text>Plan Ahead</Text>
+                <Button
+                    title="Hotels"
+                    onPress={() => this.props.navigation.navigate("SantaCruzHotels")}
+                />
+            </ScrollView>
+        </View>
     );
   }
 }
