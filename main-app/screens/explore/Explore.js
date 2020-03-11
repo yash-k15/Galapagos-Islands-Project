@@ -46,6 +46,10 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center'
+    },
+    chevron:{
+        width: 11*rem, 
+        height: 18*rem
     }
 });
 
@@ -74,7 +78,7 @@ class Explore extends React.Component {
             <View style={styles.buttonRight}>
                 <Image
                     source={require('../../app/assets/icons/chevron.png')}
-                    style={{width: 11*rem, height: 18*rem}}
+                    style={styles.chevron}
                 />
             </View>
         </TouchableOpacity>
@@ -91,7 +95,7 @@ class Explore extends React.Component {
               <View style={styles.buttonRight}>
                     <Image
                         source={require('../../app/assets/icons/chevron.png')}
-                        style={{width: 11*rem, height: 18*rem}}
+                        style={styles.chevron}
                     />              
                 </View>
               <View style={{borderBottomWidth: 1}}></View>
