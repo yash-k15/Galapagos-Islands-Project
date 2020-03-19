@@ -57,19 +57,20 @@ const styles = StyleSheet.create ({
         width: 11*rem, 
         height: 18*rem
     },
-    regularBold:{
-        fontWeight: '600',
-        color: '#000000',
-        fontSize: 17*rem,
-        paddingLeft: 34,
-        paddingTop: 16, 
-        paddingBottom: 16
-    },
-    regular:{
+    subHeader:{
+      fontWeight: '600',
+      color: '#000000',
       fontSize: 17*rem,
-      color: '#616161',
       paddingLeft: 34,
-      lineHeight: 20 * rem
+      paddingTop: 16, 
+      paddingBottom: 16
+    },
+    bodyText:{
+        fontSize: 17*rem,
+        color: '#616161',
+        paddingLeft: 34,
+        paddingRight: 65,
+        lineHeight: 22 * rem
     }
 });
 
@@ -139,11 +140,11 @@ class KnowBefore extends React.Component {
                 />                   
             </View>
         </TouchableOpacity>
-        <Text style={styles.regularBold}>Internet & Connectivity</Text>
-        <Text style={styles.regular}>Internet connection can be obtained in all places of accommodation / restaurants. The internet in
+        <Text style={styles.subHeader}>Internet & Connectivity</Text>
+        <Text style={styles.bodyText}>Internet connection can be obtained in all places of accommodation / restaurants. The internet in
                   Puerto Ayora is satellite, therefore we do not have a fiber optic connection which can make it
                   slow.</Text>
-        <Text style={styles.regularBold}>Have an Emergency?</Text>
+        <Text style={styles.subHeader}>Have an Emergency?</Text>
         <TouchableOpacity
             style={styles.lastButtonContainer}
             onPress={() => this.props.navigation.navigate("Rules")}>

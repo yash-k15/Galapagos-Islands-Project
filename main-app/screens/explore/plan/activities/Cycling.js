@@ -1,7 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import {StyleSheet, Button, Text, View, ScrollView, Dimensions} from 'react-native';
-import {Ionicons} from "@expo/vector-icons";
+import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView,} from 'react-native';
 
 //get scaling factors
 const entireScreenWidth = Dimensions.get('window').width;
@@ -24,32 +23,42 @@ const styles = StyleSheet.create ({
         fontSize: 34*rem,
         fontWeight: '600'
     },
-    subHeader:{
-        fontWeight: "600",
-        fontSize: 17*rem,
-        paddingLeft: 34*rem,
-        paddingBottom: 10*rem
-    },
     bodyContainer:{
         paddingHorizontal: 33*rem,
         paddingBottom: 52*rem
     },
-    bodyText:{
+    subHeader:{
+      fontWeight: '600',
+      color: '#000000',
       fontSize: 17*rem,
-        lineHeight: 23*rem,
-        color: '#AAAAAA'
-
+      paddingLeft: 34,
+      paddingTop: 16, 
+      paddingBottom: 16
+    },
+    bodyText:{
+        fontSize: 17*rem,
+        color: '#616161',
+        lineHeight: 22 * rem
     }
 });
 
 class Cycling extends React.Component {
   render(){
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+      <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
-              <Ionicons name="ios-book" size={32} color="green" />
+              <Image
+                  source={require('../../../../app/assets/icons/plan.png')}
+                  style={{width: 28*rem, height: 31*rem}}
+              />
               <Text style={styles.headerText}>Cycling</Text>
           </View>
+          <Image
+              source={require('../../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
+          />
           <ScrollView>
             <Text style={styles.subHeader}>Santa Cruz Island</Text>
               <View style={styles.bodyContainer}>
@@ -67,6 +76,8 @@ class Cycling extends React.Component {
               </View>
           </ScrollView>
       </View>
+      </ScrollView>
+      </SafeAreaView>
     );
   }
 }
