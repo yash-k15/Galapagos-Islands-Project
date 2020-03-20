@@ -22,7 +22,7 @@ const styles = StyleSheet.create ({
     },
     buttonContainer:{
         flexDirection: 'row',
-        borderWidth: 1,
+        borderBottomWidth: 1,
         borderColor: '#C0C0C0',
         paddingVertical: 10,
         paddingLeft: 34,
@@ -46,41 +46,63 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center'
+    },
+    chevron:{
+        width: 11*rem,
+        height: 18*rem
     }
 });
 
 
 class Explore extends React.Component {
-  render(){
-    return (
-      <View style={{backgroundColor: 'white', flex: 1}}>
-        <Text style={styles.header}>Explore</Text>
-        <TouchableOpacity
-            style={styles.buttonContainer}
-            onPress={() => this.props.navigation.navigate("KnowBefore")}>
-            <View style={styles.buttonLeft}>
-                <Ionicons name="ios-book" size={32} color="green" />
-                <Text style={styles.buttonText}>Know Before You Go</Text>
+    render(){
+        return (
+            <View style={{backgroundColor: 'white', flex: 1}}>
+                <Text style={styles.header}>Explore</Text>
+
+                <Image
+                    source={require('../../app/assets/images/headerImage_short.png')}
+                    style={{width: entireScreenWidth, height: 25*rem}}
+                />
+
+                <TouchableOpacity
+                    style={styles.buttonContainer}
+                    onPress={() => this.props.navigation.navigate("KnowBefore")}>
+                    <View style={styles.buttonLeft}>
+                        <Image
+                            source={require('../../app/assets/icons/knowBefore_gray.png')}
+                            style={{width: 28*rem, height: 28*rem}}
+                        />
+                        <Text style={styles.buttonText}>Know Before You Go</Text>
+                    </View>
+                    <View style={styles.buttonRight}>
+                        <Image
+                            source={require('../../app/assets/icons/chevron.png')}
+                            style={styles.chevron}
+                        />
+                    </View>
+                </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.lastButtonContainer}
+                    onPress={() => this.props.navigation.navigate("Plan")}>
+                    <View style={styles.buttonLeft}>
+                        <Image
+                            source={require('../../app/assets/icons/plan_gray.png')}
+                            style={{width: 28*rem, height: 31*rem}}
+                        />
+                        <Text style={styles.buttonText}>Plan Your Trip</Text>
+                    </View>
+                    <View style={styles.buttonRight}>
+                        <Image
+                            source={require('../../app/assets/icons/chevron.png')}
+                            style={styles.chevron}
+                        />
+                    </View>
+                    <View style={{borderBottomWidth: 1}}></View>
+                </TouchableOpacity>
             </View>
-            <View style={styles.buttonRight}>
-                <Ionicons name="ios-book" size={32} color="green" />
-            </View>
-        </TouchableOpacity>
-          <TouchableOpacity
-              style={styles.lastButtonContainer}
-              onPress={() => this.props.navigation.navigate("Plan")}>
-              <View style={styles.buttonLeft}>
-                  <Ionicons name="ios-book" size={32} color="green" />
-                  <Text style={styles.buttonText}>Plan Your Trip</Text>
-              </View>
-              <View style={styles.buttonRight}>
-                 <Ionicons name="ios-book" size={32} color="green" />
-              </View>
-              <View style={{borderBottomWidth: 1}}></View>
-          </TouchableOpacity>
-      </View>
-    );
-  }
+        );
+    }
 }
 
 export default Explore;

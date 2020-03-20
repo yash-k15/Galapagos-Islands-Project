@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import {StyleSheet, Button, Text, View, ScrollView, TouchableOpacity, Dimensions} from 'react-native';
+import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView,} from 'react-native';
 import {Ionicons} from "@expo/vector-icons";
 
 //get scaling factors
@@ -65,13 +65,16 @@ const styles = StyleSheet.create ({
 class TopActivities extends React.Component {
   render(){
     return (
-      <View style={{backgroundColor: 'white', flex: 1}}>
+            <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
               <Ionicons name="ios-book" size={32} color="green" />
               <Text style={styles.headerText}>Top Activities</Text>
           </View>
+          <Image
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
+          />
           <ScrollView>
-              <View style={{height: 25, backgroundColor: '#F5F5F5'}}></View>
               <View style={{borderBottomWidth: 2, borderColor: '#27C4CC'}}>
               <Text style={styles.subHeader}>Land</Text>
               </View>
