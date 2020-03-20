@@ -55,7 +55,6 @@ class Explore extends React.Component {
     return (
       <View style={{backgroundColor: 'white', flex: 1}}>
         <Text style={styles.header}>Explore</Text>
-
         <TouchableOpacity
             style={styles.buttonContainer}
             onPress={() => this.props.navigation.navigate("KnowBefore")}>

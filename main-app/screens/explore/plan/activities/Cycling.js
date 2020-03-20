@@ -37,7 +37,7 @@ const styles = StyleSheet.create ({
     bodyText:{
       fontSize: 17*rem,
         lineHeight: 23*rem,
-        color: '#AAAAAA'
+        color: '#616161'
 
     }
 });
