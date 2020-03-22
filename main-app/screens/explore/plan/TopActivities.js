@@ -59,6 +59,10 @@ const styles = StyleSheet.create ({
         flexDirection: 'row',
         justifyContent: 'flex-end',
         alignItems: 'center',
+    },
+    chevron:{
+        width: 11*rem,
+        height: 18*rem
     }
 });
 
@@ -67,7 +71,10 @@ class TopActivities extends React.Component {
     return (
             <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
-              <Ionicons name="ios-book" size={32} color="green" />
+              <Image
+                  source={require('../../../app/assets/icons/topActivities.png')}
+                  style={{width: 35*rem, height: 35 *rem}}
+              />
               <Text style={styles.headerText}>Top Activities</Text>
           </View>
           <Image
@@ -82,33 +89,51 @@ class TopActivities extends React.Component {
                   style={styles.topButtonContainer}
                   onPress={() => this.props.navigation.navigate("Cycling")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
-                      <Text style={styles.buttonText}>Cycling</Text>
+                      <Image
+                          source={require('../../../app/assets/icons/bike_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
+                      <Text style={styles.buttonText}>Biking</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <TouchableOpacity
                   style={styles.buttonContainer}
                   onPress={() => this.props.navigation.navigate("Camping")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/camp_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Camping</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <TouchableOpacity
                   style={styles.buttonContainer}
                   onPress={() => this.props.navigation.navigate("Hiking")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/hiking_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Hiking</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <View style={{borderBottomWidth: 2, borderColor: '#27C4CC'}}>
@@ -118,55 +143,85 @@ class TopActivities extends React.Component {
                   style={styles.topButtonContainer}
                   onPress={() => this.props.navigation.navigate("Cruise")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/cruise_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Cruise</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <TouchableOpacity
                   style={styles.buttonContainer}
                   onPress={() => this.props.navigation.navigate("Diving")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/diving_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Diving</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <TouchableOpacity
                   style={styles.buttonContainer}
                   onPress={() => this.props.navigation.navigate("Surfing")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/surf_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Surfing</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <TouchableOpacity
                   style={styles.buttonContainer}
                   onPress={() => this.props.navigation.navigate("Kayaking")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/kayak_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Kayaking</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
               <TouchableOpacity
                   style={styles.buttonContainer}
                   onPress={() => this.props.navigation.navigate("Fishing")}>
                   <View style={styles.buttonLeft}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/fish_gray.png')}
+                          style={{width: 27*rem, height: 31*rem}}
+                      />
                       <Text style={styles.buttonText}>Fishing</Text>
                   </View>
                   <View style={styles.buttonRight}>
-                      <Ionicons name="ios-book" size={32} color="green" />
+                      <Image
+                          source={require('../../../app/assets/icons/chevron.png')}
+                          style={styles.chevron}
+                      />
                   </View>
               </TouchableOpacity>
           </ScrollView>

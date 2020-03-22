@@ -46,8 +46,8 @@ class Hiking extends React.Component {
     render(){
         return (
             <SafeAreaView style={styles.container}>
-                <ScrollView style={styles.scrollView}>
-                    <View style={{backgroundColor: 'white', flex: 1}}>
+                <ScrollView>
+                    <View>
                         <View style={styles.header}>
                             <Image
                                 source={require('../../../../app/assets/icons/plan.png')}
@@ -56,8 +56,8 @@ class Hiking extends React.Component {
                             <Text style={styles.headerText}>Hiking</Text>
                         </View>
                         <Image
-                            source={require('../../../../app/assets/images/headerImage_short.png')}
-                            style={{width: entireScreenWidth, height: 25*rem}}
+                            source={require('../../../../app/assets/images/headerImage.png')}
+                            style={{width: entireScreenWidth, height: 81*rem}}
                         />
                         <ScrollView>
                             <View style={styles.bodyContainer}>

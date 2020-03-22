@@ -10,7 +10,8 @@ rem = entireScreenWidth / 350;
 const styles = StyleSheet.create ({
   container: {
     backgroundColor: 'white',
-    flex: 1
+    flex: 1,
+      flexDirection: 'column'
   },
     header:{
         flexDirection: 'row',
@@ -79,8 +80,8 @@ class Cruise extends React.Component {
               <Text style={styles.headerText}>Cruise</Text>
           </View>
           <Image
-              source={require('../../../../app/assets/images/headerImage_short.png')}
-              style={{width: entireScreenWidth, height: 25*rem}}
+              source={require('../../../../app/assets/images/headerImage.png')}
+              style={{width: entireScreenWidth, height: 81*rem}}
           />
               <View style={styles.bodyContainer}>
 
