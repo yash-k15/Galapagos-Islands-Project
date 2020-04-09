@@ -91,7 +91,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/bike_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 27*rem, height: 16*rem}}
                       />
                       <Text style={styles.buttonText}>Biking</Text>
                   </View>
@@ -108,7 +108,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/camp_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 23*rem, height: 23*rem}}
                       />
                       <Text style={styles.buttonText}>Camping</Text>
                   </View>
@@ -125,7 +125,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/hiking_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 20*rem, height: 28*rem}}
                       />
                       <Text style={styles.buttonText}>Hiking</Text>
                   </View>
@@ -145,7 +145,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/cruise_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 23*rem, height: 23*rem}}
                       />
                       <Text style={styles.buttonText}>Cruise</Text>
                   </View>
@@ -162,7 +162,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/diving_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 27*rem, height: 22*rem}}
                       />
                       <Text style={styles.buttonText}>Diving</Text>
                   </View>
@@ -179,7 +179,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/surf_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 23*rem, height: 27*rem}}
                       />
                       <Text style={styles.buttonText}>Surfing</Text>
                   </View>
@@ -196,7 +196,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/kayak_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 23*rem, height: 23*rem}}
                       />
                       <Text style={styles.buttonText}>Kayaking</Text>
                   </View>
@@ -213,7 +213,7 @@ class TopActivities extends React.Component {
                   <View style={styles.buttonLeft}>
                       <Image
                           source={require('../../../app/assets/icons/fish_gray.png')}
-                          style={{width: 27*rem, height: 31*rem}}
+                          style={{width: 27*rem, height: 15*rem}}
                       />
                       <Text style={styles.buttonText}>Fishing</Text>
                   </View>
