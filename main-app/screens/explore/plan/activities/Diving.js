@@ -57,7 +57,7 @@ class Hiking extends React.Component {
                   <View style={styles.header}>
                       <Image
                           source={require('../../../../app/assets/icons/diving.png')}
-                          style={{width: 28*rem, height: 31*rem}}
+                          style={{width: 32*rem, height: 27*rem}}
                       />
                       <Text style={styles.headerText}>Diving</Text>
                   </View>

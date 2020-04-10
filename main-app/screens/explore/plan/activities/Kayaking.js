@@ -52,8 +52,8 @@ class Kayaking extends React.Component {
               <View>
                   <View style={styles.header}>
                       <Image
-                          source={require('../../../../app/assets/icons/surf.png')}
-                          style={{width: 28*rem, height: 31*rem}}
+                          source={require('../../../../app/assets/icons/kayak.png')}
+                          style={{width: 28*rem, height: 28*rem}}
                       />
                       <Text style={styles.headerText}>Kayaking</Text>
                   </View>

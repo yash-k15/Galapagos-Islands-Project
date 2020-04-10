@@ -54,7 +54,7 @@ class Fishing extends React.Component {
                   <View style={styles.header}>
                       <Image
                           source={require('../../../../app/assets/icons/fish.png')}
-                          style={{width: 28*rem, height: 31*rem}}
+                          style={{width: 36*rem, height: 20*rem}}
                       />
                       <Text style={styles.headerText}>Fishing</Text>
                   </View>

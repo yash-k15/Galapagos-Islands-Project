@@ -74,8 +74,8 @@ class Cruise extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
               <Image
-                  source={require('../../../../app/assets/icons/plan.png')}
-                  style={{width: 28*rem, height: 31*rem}}
+                  source={require('../../../../app/assets/icons/cruise.png')}
+                  style={{width: 30*rem, height: 29*rem}}
               />
               <Text style={styles.headerText}>Cruise</Text>
           </View>

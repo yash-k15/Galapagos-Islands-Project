@@ -93,7 +93,7 @@ class TopActivities extends React.Component {
                           source={require('../../../app/assets/icons/bike_gray.png')}
                           style={{width: 27*rem, height: 16*rem}}
                       />
-                      <Text style={styles.buttonText}>Biking</Text>
+                      <Text style={styles.buttonText}>Cycling</Text>
                   </View>
                   <View style={styles.buttonRight}>
                       <Image

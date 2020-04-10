@@ -50,8 +50,8 @@ class Cycling extends React.Component {
                     <View>
                         <View style={styles.header}>
                             <Image
-                                source={require('../../../../app/assets/icons/plan.png')}
-                                style={{width: 28*rem, height: 31*rem}}
+                                source={require('../../../../app/assets/icons/bike.png')}
+                                style={{width: 35*rem, height: 22*rem}}
                             />
                             <Text style={styles.headerText}>Cycling</Text>
                         </View>
