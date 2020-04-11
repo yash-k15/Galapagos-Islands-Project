@@ -66,7 +66,7 @@ class Plan extends React.Component {
           <View style={styles.header}>
                 <Image
                     source={require('../../../app/assets/icons/plan.png')}
-                    style={{width: 28*rem, height: 31*rem}}
+                    style={{width: 28*rem, height: 32*rem}}
                 />
               <Text style={styles.headerText}>Plan Your Trip</Text>
           </View>
@@ -109,7 +109,7 @@ class Plan extends React.Component {
               onPress={() => this.props.navigation.navigate("TravelAgencies")}>
               <View style={styles.buttonLeft}>
                     <Image
-                        source={require('../../../app/assets/icons/island_gray.png')}
+                        source={require('../../../app/assets/icons/agencies_gray.png')}
                         style={{width: 27*rem, height: 31*rem}}
                     />                   
                     <Text style={styles.buttonText}>Travel Agencies</Text>
@@ -126,8 +126,8 @@ class Plan extends React.Component {
               onPress={() => this.props.navigation.navigate("IslandHop")}>
               <View style={styles.buttonLeft}>
                     <Image
-                        source={require('../../../app/assets/icons/island_gray.png')}
-                        style={{width: 27*rem, height: 31*rem}}
+                        source={require('../../../app/assets/icons/cruise_gray.png')}
+                        style={{width: 27*rem, height: 27*rem}}
                     />                   
                     <Text style={styles.buttonText}>Want to Island Hop?</Text>
               </View>

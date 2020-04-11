@@ -88,8 +88,8 @@ class Rules extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
               <Image
-                  source={require('../../../app/assets/icons/plan.png')}
-                  style={{width: 28*rem, height: 31*rem}}
+                  source={require('../../../app/assets/icons/rules1.png')}
+                  style={{width: 30*rem, height: 33*rem}}
               />
               <Text style={styles.headerText}>Rules of the National Park</Text>
           </View>

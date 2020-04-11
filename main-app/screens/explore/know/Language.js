@@ -78,8 +78,8 @@ class Language extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
         <View style={styles.header}>
             <Image
-                source={require('../../../app/assets/icons/plan.png')}
-                style={{width: 28*rem, height: 31*rem}}
+                source={require('../../../app/assets/icons/alphabet.png')}
+                style={{width: 35*rem, height: 28*rem}}
             />
             <Text style={styles.headerText}>Language</Text>
         </View>

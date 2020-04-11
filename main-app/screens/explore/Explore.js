@@ -88,7 +88,7 @@ class Explore extends React.Component {
                     <View style={styles.buttonLeft}>
                         <Image
                             source={require('../../app/assets/icons/plan_gray.png')}
-                            style={{width: 28*rem, height: 31*rem}}
+                            style={{width: 27*rem, height: 30*rem}}
                         />
                         <Text style={styles.buttonText}>Plan Your Trip</Text>
                     </View>

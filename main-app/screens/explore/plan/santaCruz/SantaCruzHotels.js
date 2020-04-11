@@ -144,8 +144,8 @@ class SantaCruzHotels extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
               <Image
-                  source={require('../../../../app/assets/icons/topActivities.png')}
-                  style={{width: 30*rem, height: 31 *rem}}
+                  source={require('../../../../app/assets/icons/bed.png')}
+                  style={{width: 32*rem, height: 29*rem}}
               />
               <Text style={styles.headerText}>Hotels</Text>
           </View>

@@ -144,7 +144,7 @@ class TravelAgencies extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
               <Image
-                  source={require('../../../app/assets/icons/topActivities.png')}
+                  source={require('../../../app/assets/icons/agencies.png')}
                   style={{width: 30*rem, height: 31 *rem}}
               />
               <Text style={styles.headerText}>Travel Agencies</Text>

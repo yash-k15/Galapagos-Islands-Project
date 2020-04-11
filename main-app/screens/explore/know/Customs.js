@@ -78,8 +78,8 @@ class Customs extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
         <View style={styles.header}>
             <Image
-                source={require('../../../app/assets/icons/plan.png')}
-                style={{width: 28*rem, height: 31*rem}}
+                source={require('../../../app/assets/icons/galap.png')}
+                style={{width: 31*rem, height: 31*rem}}
             />
             <Text style={styles.headerText}>Cultural & Social Customs</Text>
         </View>

@@ -69,7 +69,7 @@ const styles = StyleSheet.create ({
         fontSize: 17*rem,
         color: '#616161',
         paddingLeft: 34,
-        paddingRight: 65,
+        paddingRight: 34,
         lineHeight: 22 * rem
     }
 });
@@ -80,8 +80,8 @@ class KnowBefore extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
         <View style={styles.header}>
             <Image
-                source={require('../../../app/assets/icons/plan.png')}
-                style={{width: 28*rem, height: 31*rem}}
+                source={require('../../../app/assets/icons/knowBefore.png')}
+                style={{width: 31*rem, height: 31*rem}}
             />
             <Text style={styles.headerText}>Know Before You Go</Text>
         </View>
@@ -94,8 +94,8 @@ class KnowBefore extends React.Component {
             onPress={() => this.props.navigation.navigate("Language")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../../app/assets/icons/topActivities_gray.png')}
-                    style={{width: 30*rem, height: 30*rem}}
+                    source={require('../../../app/assets/icons/alphabet_gray.png')}
+                    style={{width: 32*rem, height: 25*rem}}
                 />                  
                 <Text style={styles.buttonText}>Language</Text>
             </View>
@@ -111,8 +111,8 @@ class KnowBefore extends React.Component {
             onPress={() => this.props.navigation.navigate("Customs")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../../app/assets/icons/island_gray.png')}
-                    style={{width: 27*rem, height: 31*rem}}
+                    source={require('../../../app/assets/icons/galap.png')}
+                    style={{width: 29*rem, height: 29*rem}}
                 />                   
                 <Text style={styles.buttonText}>Cultural & Social Norms</Text>
             </View>
@@ -128,7 +128,7 @@ class KnowBefore extends React.Component {
             onPress={() => this.props.navigation.navigate("Rules")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../../app/assets/icons/island_gray.png')}
+                    source={require('../../../app/assets/icons/rules1_gray.png')}
                     style={{width: 27*rem, height: 31*rem}}
                 />                   
                 <Text style={styles.buttonText}>Rules of the National Park</Text>

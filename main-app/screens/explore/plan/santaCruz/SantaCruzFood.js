@@ -144,8 +144,8 @@ class SantaCruzFood extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
               <Image
-                  source={require('../../../../app/assets/icons/topActivities.png')}
-                  style={{width: 30*rem, height: 31 *rem}}
+                  source={require('../../../../app/assets/icons/food.png')}
+                  style={{width: 25*rem, height: 31 *rem}}
               />
               <Text style={styles.headerText}>Food & Drinks</Text>
           </View>

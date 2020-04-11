@@ -65,7 +65,7 @@ class SantaCruz extends React.Component {
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
                 <Image
-                    source={require('../../../../app/assets/icons/plan.png')}
+                    source={require('../../../../app/assets/icons/island.png')}
                     style={{width: 28*rem, height: 31*rem}}
                 />
               <Text style={styles.headerText}>Santa Cruz</Text>
@@ -75,8 +75,8 @@ class SantaCruz extends React.Component {
               onPress={() => this.props.navigation.navigate("SantaCruzFood")}>
               <View style={styles.buttonLeft}>
                     <Image
-                        source={require('../../../../app/assets/icons/topActivities_gray.png')}
-                        style={{width: 30*rem, height: 30*rem}}
+                        source={require('../../../../app/assets/icons/food_gray.png')}
+                        style={{width: 24*rem, height: 30*rem}}
                     />                  
                     <Text style={styles.buttonText}>Food & Drinks</Text>
               </View>
@@ -92,8 +92,8 @@ class SantaCruz extends React.Component {
               onPress={() => this.props.navigation.navigate("SantaCruzHotels")}>
               <View style={styles.buttonLeft}>
                     <Image
-                        source={require('../../../../app/assets/icons/island_gray.png')}
-                        style={{width: 27*rem, height: 31*rem}}
+                        source={require('../../../../app/assets/icons/bed_gray.png')}
+                        style={{width: 29*rem, height: 30*rem}}
                     />                   
                     <Text style={styles.buttonText}>Hotels</Text>
               </View>
