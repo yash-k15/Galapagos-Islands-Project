@@ -27,7 +27,7 @@ import Customs from "./screens/explore/know/Customs";
 import Rules from "./screens/explore/know/Rules";
 import Plan from "./screens/explore/plan/Plan";
 import TravelAgencies from "./screens/explore/plan/TravelAgencies";
-import Transport from "./screens/explore/plan/Transport";
+import IslandHop from "./screens/explore/plan/IslandHop";
 
 import TopActivities from "./screens/explore/plan/TopActivities";
 import Cycling from "./screens/explore/plan/activities/Cycling";
@@ -38,8 +38,13 @@ import Diving from "./screens/explore/plan/activities/Diving";
 import Surfing from "./screens/explore/plan/activities/Surfing";
 import Kayaking from "./screens/explore/plan/activities/Kayaking";
 import Fishing from "./screens/explore/plan/activities/Fishing";
+
+import SantaCruz from "./screens/explore/plan/santaCruz/SantaCruz";
+import SantaCruzFood from "./screens/explore/plan/santaCruz/SantaCruzFood";
+import SantaCruzHotels from "./screens/explore/plan/santaCruz/SantaCruzHotels";
+
 // Island Hop imports
-import IslandHop from "./screens/explore/plan/islandHop/IslandHop";
+/*import IslandHop from "./screens/explore/plan/islandHop/IslandHop";
 import Floreana from "./screens/explore/plan/islandHop/floreana/Floreana";
 import FloreanaFood from "./screens/explore/plan/islandHop/floreana/FloreanaFood";
 import FloreanaHotels from "./screens/explore/plan/islandHop/floreana/FloreanaHotels";
@@ -59,7 +64,7 @@ import SantaCruz from "./screens/explore/plan/islandHop/santaCruz/SantaCruz";
 import SantaCruzFood from "./screens/explore/plan/islandHop/santaCruz/SantaCruzFood";
 import SantaCruzHotels from "./screens/explore/plan/islandHop/santaCruz/SantaCruzHotels";
 import SantaCruzTop from "./screens/explore/plan/islandHop/santaCruz/SantaCruzTop";
-
+*/
 
 const LearnSection = createStackNavigator({
     Learn: { screen: Learn },
@@ -95,7 +100,7 @@ const ExploreSection = createStackNavigator({
     Rules : {screen: Rules},
     Plan : {screen: Plan},
     TravelAgencies : {screen: TravelAgencies},
-    Transport : {screen: Transport},
+    IslandHop : {screen: IslandHop},
     TopActivities: {screen: TopActivities},
     Cycling: {screen: Cycling},
     Camping: {screen: Camping},
@@ -105,7 +110,7 @@ const ExploreSection = createStackNavigator({
     Surfing: {screen: Surfing},
     Kayaking: {screen: Kayaking},
     Fishing: {screen: Fishing},
-    IslandHop:{screen: IslandHop},
+    /*
     Floreana:{screen: Floreana},
     FloreanaFood: {screen: FloreanaFood},
     FloreanaHotels:{screen:FloreanaHotels},
@@ -118,10 +123,13 @@ const ExploreSection = createStackNavigator({
     SanCristobalFood: {screen: SanCristobalFood},
     SanCristobalHotels: {screen: SanCristobalHotels},
     SanCristobalTop: {screen: SanCristobalTop},
+    */
     SantaCruz: {screen: SantaCruz},
     SantaCruzFood: {screen: SantaCruzFood},
     SantaCruzHotels: {screen: SantaCruzHotels},
+    /*
     SantaCruzTop: {screen: SantaCruzTop}
+    */
 });
 
 ExploreSection.navigationOptions = ({navigation}) => {

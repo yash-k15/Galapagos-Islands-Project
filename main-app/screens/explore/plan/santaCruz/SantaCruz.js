@@ -59,81 +59,47 @@ const styles = StyleSheet.create ({
     }
 });
 
-class Plan extends React.Component {
+class SantaCruz extends React.Component {
   render(){
     return (
       <View style={{backgroundColor: 'white', flex: 1}}>
           <View style={styles.header}>
                 <Image
-                    source={require('../../../app/assets/icons/plan.png')}
+                    source={require('../../../../app/assets/icons/plan.png')}
                     style={{width: 28*rem, height: 31*rem}}
                 />
-              <Text style={styles.headerText}>Plan Your Trip</Text>
+              <Text style={styles.headerText}>Santa Cruz</Text>
           </View>
           <TouchableOpacity
               style={styles.buttonContainer}
-              onPress={() => this.props.navigation.navigate("TopActivities")}>
+              onPress={() => this.props.navigation.navigate("SantaCruzFood")}>
               <View style={styles.buttonLeft}>
                     <Image
-                        source={require('../../../app/assets/icons/topActivities_gray.png')}
+                        source={require('../../../../app/assets/icons/topActivities_gray.png')}
                         style={{width: 30*rem, height: 30*rem}}
                     />                  
-                    <Text style={styles.buttonText}>Top Activities</Text>
+                    <Text style={styles.buttonText}>Food & Drinks</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
-                        source={require('../../../app/assets/icons/chevron.png')}
+                        source={require('../../../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
                     />                
                 </View>
           </TouchableOpacity>
           <TouchableOpacity
-              style={styles.buttonContainer}
-              onPress={() => this.props.navigation.navigate("SantaCruz")}>
-              <View style={styles.buttonLeft}>
-                    <Image
-                        source={require('../../../app/assets/icons/island_gray.png')}
-                        style={{width: 27*rem, height: 31*rem}}
-                    />                   
-                    <Text style={styles.buttonText}>Santa Cruz Island</Text>
-              </View>
-              <View style={styles.buttonRight}>
-                    <Image
-                        source={require('../../../app/assets/icons/chevron.png')}
-                        style={styles.chevron}
-                    />                   
-                </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-              style={styles.buttonContainer}
-              onPress={() => this.props.navigation.navigate("TravelAgencies")}>
-              <View style={styles.buttonLeft}>
-                    <Image
-                        source={require('../../../app/assets/icons/island_gray.png')}
-                        style={{width: 27*rem, height: 31*rem}}
-                    />                   
-                    <Text style={styles.buttonText}>Travel Agencies</Text>
-              </View>
-              <View style={styles.buttonRight}>
-                    <Image
-                        source={require('../../../app/assets/icons/chevron.png')}
-                        style={styles.chevron}
-                    />                   
-                </View>
-          </TouchableOpacity>
-          <TouchableOpacity
               style={styles.lastButtonContainer}
-              onPress={() => this.props.navigation.navigate("IslandHop")}>
+              onPress={() => this.props.navigation.navigate("SantaCruzHotels")}>
               <View style={styles.buttonLeft}>
                     <Image
-                        source={require('../../../app/assets/icons/island_gray.png')}
+                        source={require('../../../../app/assets/icons/island_gray.png')}
                         style={{width: 27*rem, height: 31*rem}}
                     />                   
-                    <Text style={styles.buttonText}>Want to Island Hop?</Text>
+                    <Text style={styles.buttonText}>Hotels</Text>
               </View>
               <View style={styles.buttonRight}>
                     <Image
-                        source={require('../../../app/assets/icons/chevron.png')}
+                        source={require('../../../../app/assets/icons/chevron.png')}
                         style={styles.chevron}
                     />                   
                 </View>
@@ -142,4 +108,4 @@ class Plan extends React.Component {
     );
   }
 }
-export default Plan;
+export default SantaCruz;
