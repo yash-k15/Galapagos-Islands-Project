@@ -2,7 +2,18 @@ import 'react-native-gesture-handler';
 import 'react-native-gesture-handler';
 import Swiper from 'react-native-swiper';
 import * as React from 'react';
-import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView} from 'react-native';
+import {
+    StyleSheet,
+    Button,
+    Text,
+    View,
+    TouchableOpacity,
+    Image,
+    Dimensions,
+    SafeAreaView,
+    ScrollView,
+    Linking
+} from 'react-native';
 import { any } from 'prop-types';
 
 //get scaling factors
@@ -182,27 +193,39 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526419}')}>
                   <Image
                       source={require('../../../app/assets/icons/phone.png')}
                       style={styles.infoPhone}
                   />
                   <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
-              </View>
+              </TouchableOpacity>
+            <TouchableOpacity
+              style = {{flexDirection: "row"}}
+              onPress={() => Linking.openURL('mailto:${ventas@santafegalapagos.com.ec}')}>
+              <Image
+                  source={require('../../../app/assets/icons/email.png')}
+                  style={styles.infoEmail}
+              />
+              <Text style={styles.infoText}>Email</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style = {{flexDirection: "row"}}
+              onPress={() => Linking.openURL('https:yacht.santafegalapagos.com.ec')}>
+              <Image
+                  source={require('../../../app/assets/icons/www_gray.png')}
+                  style={styles.infoWeb}
+              />
+              <Text style={styles.infoText}>Website</Text>
+            </TouchableOpacity>
+          </View>
               <View style={styles.lastRow}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
+                  source={require('../../../app/assets/icons/location_gray.png')}
+                  style={styles.infoAddress}
+              />
                   <Text style={styles.infoText}>Locate</Text>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
