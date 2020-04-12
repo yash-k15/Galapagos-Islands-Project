@@ -2,7 +2,7 @@ import 'react-native-gesture-handler';
 import 'react-native-gesture-handler';
 import Swiper from 'react-native-swiper';
 import * as React from 'react';
-import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView} from 'react-native';
+import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView, Linking} from 'react-native';
 import { any } from 'prop-types';
 
 //get scaling factors
@@ -182,21 +182,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526627}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${oficina@1835coffeelabec.com}')}>
+                    <Image
+                        source={require('../../../../app/assets/icons/email.png')}
+                        style={styles.infoEmail}
+                    />
+                    <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.coffeelabec.com')}>
+                    <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                        style={styles.infoWeb}
+                    />
+                    <Text style={styles.infoText}>Website</Text>
+                 </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -240,21 +252,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352527520}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${elisagps@gmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -268,8 +292,6 @@ class SantaCruzFood extends React.Component {
                   />
                   <Text style={styles.infoText}>Favorite</Text>
               </View>
-
-
               <Text style={styles.regularBold}>Discoteca La Panga</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
                 <View style={styles.slide}>
@@ -292,21 +314,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526266}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:{gerencia@electronautica.com.ec}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -350,21 +384,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526419}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${reservas@elmuellededarwin.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.elmuellededarwin.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -408,21 +454,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352524681}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${loylococinaecuatoriana@gmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -466,21 +524,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${593093175377}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${selvapro2014@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -524,21 +594,34 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${593994325803}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${reservasbahiamar@gmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
+
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -582,21 +665,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${593906240395}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${selvapro2010@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -640,21 +735,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526627}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ilgiardinogalapagos@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -698,21 +805,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352527395}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${islagrillgalapagos@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -756,21 +875,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526264}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${garrapata.restaurant@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -814,21 +945,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59353014445}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
@@ -872,21 +1015,33 @@ class SantaCruzFood extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${5932526121}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ventas@proinsular.com.ec}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
                   <Image
