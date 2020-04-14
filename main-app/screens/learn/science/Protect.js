@@ -1,22 +1,66 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
-import { StyleSheet, Button, Text, View, ScrollView } from 'react-native';
+import {StyleSheet, Button, Text, View, ScrollView, Image, Dimensions} from 'react-native';
+
+const entireScreenWidth = Dimensions.get('window').width;
+let rem;
+rem = entireScreenWidth / 350;
 
 const styles = StyleSheet.create ({
-  container: {
-      flex: 1,
-      justifyContent: "center",
-      alignItems: "center"
-  }
+    container: {
+        backgroundColor: 'white',
+        flex: 1
+    },
+    header:{
+        flexDirection: 'row',
+        paddingVertical: 16,
+        paddingLeft: 34,
+        alignItems: 'center'
+    },
+    headerText: {
+        paddingLeft: 16,
+        fontSize: 34*rem,
+        fontWeight: '600'
+    },
+    bodyContainer:{
+        paddingVertical: 36*rem,
+        paddingHorizontal: 33*rem,
+        paddingBottom: 52*rem
+    },
+    subHeader:{
+        fontWeight: '600',
+        color: '#000000',
+        fontSize: 17*rem,
+        paddingLeft: 34,
+        paddingTop: 16,
+        paddingBottom: 16
+    },
+    bodyText:{
+        fontSize: 17*rem,
+        color: '#616161',
+        lineHeight: 22 * rem
+    }
 });
+
 
 class Protect extends React.Component {
     render(){
         return (
-              <View style={styles.container}>
+                  <View style={styles.container}>
+                      <View style={styles.header}>
+                          <Image
+                              source={require('../../../app/assets/icons/bike.png')}
+                              style={{width: 35*rem, height: 22*rem}}
+                          />
+                          <Text style={styles.headerText}>How to Protect</Text>
+                      </View>
+                      <Image
+                          source={require('../../../app/assets/images/headerImage.png')}
+                          style={{width: entireScreenWidth, height: 81*rem}}
+                      />
                   <ScrollView>
-                    <Text>How to Protect</Text>
-                    <Text>There are currently several people, institutions and initiatives that seek to protect the
+                      <View style={styles.bodyContainer}>
+                          <Text style={styles.bodyText}>There are currently several people, institutions and initiatives that seek to protect the
                         flora and fauna of the Galapagos. Many of these plans need the commitment and effort of people,
                         especially those who live in the archipelago. One of these ideas is to commit government
                         institutions to carry out a stricter control in the entrance and exit channels of exotic
@@ -33,6 +77,7 @@ class Protect extends React.Component {
                         approval of the law prohibiting the use of disposable plastics, especially t-shirt covers, in
                         all the Galapagos Islands. These measures and initiatives seek to recover ecosystems and
                         preserve the flora and fauna of the Galapagos Islands. </Text>
+                      </View>
                 </ScrollView>
               </View>
         );
