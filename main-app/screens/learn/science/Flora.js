@@ -44,7 +44,8 @@ const styles = StyleSheet.create ({
 class Flora extends React.Component {
     render(){
     return (
-          <View style={styles.container}>
+        <ScrollView style={styles.container}>
+          <View>
               <View style={styles.header}>
                   <Image
                       source={require('../../../app/assets/icons/bike.png')}
@@ -53,11 +54,10 @@ class Flora extends React.Component {
                   <Text style={styles.headerText}>Flora</Text>
               </View>
               <Image
-                  source={require('../../../app/assets/images/headerImage.png')}
-                  style={{width: entireScreenWidth, height: 81*rem}}
-              />
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
+            />
               <SafeAreaView style={styles.container}>
-                  <ScrollView>
                       <View style={styles.bodyContainer}>
                       <Text style={styles.bodyText}>Scientifically, it is known that the Galapagos flora has managed to grow thanks to the winds, the
                           transport of the seeds in the legs and digestive tract of the animals, and through floating rafts that
@@ -82,9 +82,10 @@ class Flora extends React.Component {
                           created great distance with the arid zone. This area has ferns, orchids, moss, lichen, cat's claw and
                           other plants. </Text>
                       </View>
-                  </ScrollView>
               </SafeAreaView>
       </View>
+      </ScrollView>
+
     );
     }
 }

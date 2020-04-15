@@ -46,7 +46,9 @@ const styles = StyleSheet.create ({
 class EndangeredSpecies extends React.Component {
   render(){
     return (
-          <View style={styles.container}>
+        <ScrollView style={styles.container}>
+
+          <View>
               <View style={styles.header}>
                   <Image
                       source={require('../../../app/assets/icons/bike.png')}
@@ -55,10 +57,9 @@ class EndangeredSpecies extends React.Component {
                   <Text style={styles.headerText}>Endangered Species</Text>
               </View>
               <Image
-                  source={require('../../../app/assets/images/headerImage.png')}
-                  style={{width: entireScreenWidth, height: 81*rem}}
-              />
-          <ScrollView>
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
+            />
               <View style={styles.bodyContainer}>
                   <Text style={styles.bodyText}>In 2018, a list was created with the endangered species, among which we find: </Text>
               </View>
@@ -69,8 +70,9 @@ class EndangeredSpecies extends React.Component {
                 change that generates harmful variations in the levels of oxygen and other gases at the bottom of
                 the sea.</Text>
               </View>
-          </ScrollView>
       </View>
+      </ScrollView>
+
     );
   }
 }

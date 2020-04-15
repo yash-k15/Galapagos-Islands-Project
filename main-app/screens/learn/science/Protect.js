@@ -46,7 +46,8 @@ const styles = StyleSheet.create ({
 class Protect extends React.Component {
     render(){
         return (
-                  <View style={styles.container}>
+            <ScrollView style={styles.container}>
+                  <View>
                       <View style={styles.header}>
                           <Image
                               source={require('../../../app/assets/icons/bike.png')}
@@ -55,10 +56,9 @@ class Protect extends React.Component {
                           <Text style={styles.headerText}>How to Protect</Text>
                       </View>
                       <Image
-                          source={require('../../../app/assets/images/headerImage.png')}
-                          style={{width: entireScreenWidth, height: 81*rem}}
-                      />
-                  <ScrollView>
+                        source={require('../../../app/assets/images/headerImage_short.png')}
+                        style={{width: entireScreenWidth, height: 25*rem}}
+                        />
                       <View style={styles.bodyContainer}>
                           <Text style={styles.bodyText}>There are currently several people, institutions and initiatives that seek to protect the
                         flora and fauna of the Galapagos. Many of these plans need the commitment and effort of people,
@@ -78,8 +78,9 @@ class Protect extends React.Component {
                         all the Galapagos Islands. These measures and initiatives seek to recover ecosystems and
                         preserve the flora and fauna of the Galapagos Islands. </Text>
                       </View>
-                </ScrollView>
               </View>
+            </ScrollView>
+
         );
     }
 }

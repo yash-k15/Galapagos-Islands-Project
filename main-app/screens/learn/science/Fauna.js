@@ -46,7 +46,9 @@ const styles = StyleSheet.create ({
 class Fauna extends React.Component {
   render(){
     return (
-      <View style={styles.container}>
+        <ScrollView style={styles.container}>
+
+      <View>
         <View style={styles.header}>
             <Image
                 source={require('../../../app/assets/icons/bike.png')}
@@ -55,10 +57,9 @@ class Fauna extends React.Component {
             <Text style={styles.headerText}>Fauna</Text>
         </View>
         <Image
-            source={require('../../../app/assets/images/headerImage.png')}
-            style={{width: entireScreenWidth, height: 81*rem}}
-        />
-        <ScrollView>
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
+            />
             <View style={styles.bodyContainer}>
             <Text style={styles.bodyText}>There are 7214 species identified in Galapagos; It is estimated that up to 86% of the biodiversity
                 described would already be inventoried. 30.8% of the Galapagos species are endemic (native) to the
@@ -73,8 +74,8 @@ class Fauna extends React.Component {
                 to great depths to observe and collect samples of underwater ecosystems of which we know very little.
                 Numerous scientific research favors the discovery of the amazing nature of Galapagos. </Text>
             </View>
-        </ScrollView>
       </View>
+      </ScrollView>
     );
   }
 }

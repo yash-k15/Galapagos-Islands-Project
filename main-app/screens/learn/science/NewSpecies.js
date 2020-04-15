@@ -45,7 +45,8 @@ const styles = StyleSheet.create ({
 class NewSpecies extends React.Component {
   render(){
     return (
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
+        <View>
             <View style={styles.header}>
                 <Image
                     source={require('../../../app/assets/icons/bike.png')}
@@ -54,11 +55,10 @@ class NewSpecies extends React.Component {
                 <Text style={styles.headerText}>New Species</Text>
             </View>
             <Image
-                source={require('../../../app/assets/images/headerImage.png')}
-                style={{width: entireScreenWidth, height: 81*rem}}
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
             />
             <SafeAreaView style={styles.container}>
-              <ScrollView>
                   <View style={styles.bodyContainer}>
                       <Text style={styles.bodyText}>We have made a small tour of the flora and fauna of the Galapagos, but that does not mean that
                         there are no more species or that all have already been discovered. In fact, since 2009 they have
@@ -73,9 +73,9 @@ class NewSpecies extends React.Component {
                         already known before, show us that the Galapagos Islands are a living laboratory and that, although
                         their species have evolved and developed in inhospitable environments, their ecosystems are fragile.</Text>
                   </View>
-              </ScrollView>
             </SafeAreaView>
       </View>
+      </ScrollView>
     );
   }
 }

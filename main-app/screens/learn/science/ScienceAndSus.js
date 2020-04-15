@@ -7,6 +7,10 @@ let rem;
 rem = entireScreenWidth / 360;
 
 const styles = StyleSheet.create ({
+    container:{
+        backgroundColor: '#fff',
+        flex: 1
+    },
     header:{
         flexDirection: 'row',
         paddingVertical: 16,
@@ -67,7 +71,8 @@ const styles = StyleSheet.create ({
 class ScienceAndSus extends React.Component {
   render(){
     return (
-          <View style={{backgroundColor: 'white', flex: 1}}>
+        <ScrollView style={styles.container}>
+          <View>
               <View style={styles.header}>
                   <Image
                       source={require('../../../app/assets/icons/topActivities.png')}
@@ -76,10 +81,9 @@ class ScienceAndSus extends React.Component {
                   <Text style={styles.headerText}>Science & Sustainability</Text>
               </View>
               <Image
-                  source={require('../../../app/assets/images/headerImage_short.png')}
-                  style={{width: entireScreenWidth, height: 25*rem}}
-              />
-          <ScrollView>
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem}}
+            />
               <View style={{borderBottomWidth: 2, borderColor: '#27C4CC'}}>
                   <Text style={styles.subHeader}>Flora & Fauna</Text>
               </View>
@@ -171,8 +175,8 @@ class ScienceAndSus extends React.Component {
                       />
                   </View>
               </TouchableOpacity>
-        </ScrollView>
       </View>
+      </ScrollView>
     );
   }
 }
