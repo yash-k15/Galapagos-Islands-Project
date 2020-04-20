@@ -83,7 +83,7 @@ class History extends React.Component {
         <View style={styles.header}>
             <Image
                 source={require('../../../app/assets/icons/history.png')}
-                style={{width: 34*rem, height: 27*rem}}
+                style={{width: 28*rem, height: 29*rem}}
             />
             <Text style={styles.headerText}>History</Text>
         </View>
@@ -93,11 +93,11 @@ class History extends React.Component {
         />
         <TouchableOpacity
             style={styles.buttonContainer}
-            onPress={() => this.props.navigation.navigate("Language")}>
+            onPress={() => this.props.navigation.navigate("Timeline")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../../app/assets/icons/alphabet_gray.png')}
-                    style={{width: 32*rem, height: 25*rem}}
+                    source={require('../../../app/assets/icons/timeline_gray.png')}
+                    style={{width: 21*rem, height: 24*rem}}
                 />                  
                 <Text style={styles.buttonText}>Timeline</Text>
             </View>
@@ -110,11 +110,11 @@ class History extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity
             style={styles.lastButtonContainer}
-            onPress={() => this.props.navigation.navigate("Customs")}>
+            onPress={() => this.props.navigation.navigate("People")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../../app/assets/icons/galap.png')}
-                    style={{width: 29*rem, height: 29*rem}}
+                    source={require('../../../app/assets/icons/people_gray.png')}
+                    style={{width: 27*rem, height: 27*rem}}
                 />                   
                 <Text style={styles.buttonText}>People</Text>
             </View>
