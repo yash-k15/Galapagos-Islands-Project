@@ -75,8 +75,8 @@ class ScienceAndSus extends React.Component {
           <View>
               <View style={styles.header}>
                   <Image
-                      source={require('../../../app/assets/icons/topActivities.png')}
-                      style={{width: 35*rem, height: 35 *rem}}
+                      source={require('../../../app/assets/icons/scienceAndSus.png')}
+                      style={{width: 35*rem, height: 31*rem}}
                   />
                   <Text style={styles.headerText}>Science & Sustainability</Text>
               </View>

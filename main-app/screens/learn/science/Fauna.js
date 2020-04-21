@@ -61,18 +61,12 @@ class Fauna extends React.Component {
               style={{width: entireScreenWidth, height: 25*rem}}
             />
             <View style={styles.bodyContainer}>
-            <Text style={styles.bodyText}>There are 7214 species identified in Galapagos; It is estimated that up to 86% of the biodiversity
-                described would already be inventoried. 30.8% of the Galapagos species are endemic (native) to the
-                islands. Vertebrate animals comprise 696 species, 10% of the island's biodiversity. Terrestrial
-                and freshwater invertebrates represent 32% of terrestrial biodiversity. Currently, marine invertebrates
-                represent 31% of marine biodiversity (note: these data are estimates as of 2001 and are in constant
-                variation). The Galapagos Marine Reserve is the second largest in surface and the only open water in
-                the world. The biomass of its waters is surprisingly rich by the cold water currents that emerge in
-                this sector, without doubt the waters of the archipelago have an interesting marine fauna that remains
-                to be known. For this reason, the scientific research of the Technical Department of the Galapagos
-                National Park focuses on the study of marine biodiversity. The new technologies allow to go down
-                to great depths to observe and collect samples of underwater ecosystems of which we know very little.
-                Numerous scientific research favors the discovery of the amazing nature of Galapagos. </Text>
+            <Text style={styles.bodyText}>There are 7214 species identified in Galapagos. {"\n\n"}
+            It is estimated that up to 86% of the biodiversity described would already be inventoried. 30.8% of the Galapagos species are endemic (native) to the islands.{"\n\n"}
+            Vertebrate animals comprise 696 species, 10% of the island's biodiversity. Terrestrial and freshwater invertebrates represent 32% of terrestrial biodiversity. Currently, marine invertebrates represent 31% of marine biodiversity (note: these data are estimates as of 2001 and are in constant variation).{"\n\n"}
+            The Galapagos Marine Reserve is the second largest in surface and the only open water in the world. The biomass of its waters is surprisingly rich by the cold water currents that emerge in this sector, without doubt the waters of the archipelago have an interesting marine fauna that remains to be known. {"\n\n"}
+            For this reason, the scientific research of the Technical Department of the Galapagos National Park focuses on the study of marine biodiversity. New technology allows us to go down to great depths to observe and collect samples of underwater ecosystems of which we know very little.{"\n\n"}
+            Numerous scientific research favors the discovery of the amazing nature of Galapagos. </Text>
             </View>
       </View>
       </ScrollView>
