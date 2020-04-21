@@ -51,8 +51,8 @@ class Fauna extends React.Component {
       <View>
         <View style={styles.header}>
             <Image
-                source={require('../../../app/assets/icons/bike.png')}
-                style={{width: 35*rem, height: 22*rem}}
+                source={require('../../../app/assets/icons/fauna.png')}
+                style={{width: 34*rem, height: 23*rem}}
             />
             <Text style={styles.headerText}>Fauna</Text>
         </View>

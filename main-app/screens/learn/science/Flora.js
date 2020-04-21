@@ -47,8 +47,8 @@ class Flora extends React.Component {
           <View>
               <View style={styles.header}>
                   <Image
-                      source={require('../../../app/assets/icons/bike.png')}
-                      style={{width: 35*rem, height: 22*rem}}
+                      source={require('../../../app/assets/icons/flora.png')}
+                      style={{width: 30*rem, height: 30*rem}}
                   />
                   <Text style={styles.headerText}>Flora</Text>
               </View>

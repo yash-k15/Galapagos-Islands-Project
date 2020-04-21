@@ -73,7 +73,7 @@ const styles = StyleSheet.create ({
       fontSize: 17*rem,
       color: '#616161',
       padding: 30,
-      lineHeight: 20 * rem
+      lineHeight: 22 * rem
     },
     numberRow:{
       flexDirection: 'row',
@@ -146,8 +146,8 @@ class EndangeredSpecies extends React.Component {
           <View>
               <View style={styles.header}>
                   <Image
-                      source={require('../../../app/assets/icons/bike.png')}
-                      style={{width: 35*rem, height: 22*rem}}
+                      source={require('../../../app/assets/icons/endangered.png')}
+                      style={{width: 28*rem, height: 25*rem}}
                   />
                   <Text style={styles.headerText}>Endangered Species</Text>
               </View>
@@ -158,30 +158,72 @@ class EndangeredSpecies extends React.Component {
             <Text style={styles.regular}>In 2018, a list was created with the endangered species, among which we find: </Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
                 <View style={styles.slide}>
-                    <Text style={styles.regularBold}>Fds-Travel S.A</Text>
+                    <Text style={styles.regularBold}>Penguin</Text>
                       <Image
-                          source={require('../../../app/assets/images/travel-agencies/fds-travel/1.jpg')}
+                          source={require('../../../app/assets/images/endangered/penguin.jpg')}
                           style={styles.slideImage}
                       />
                 </View>
                 <View style={styles.slide}>
-                    <Text style={styles.regularBold}>Fds-Travel S.A</Text>
+                    <Text style={styles.regularBold}>Land Iguana</Text>
                     <Image
-                        source={require('../../../app/assets/images/travel-agencies/fds-travel/2.jpg')}
+                        source={require('../../../app/assets/images/endangered/landIguana.jpg')}
                         style={styles.slideImage}
                     />        
                 </View>
                 <View style={styles.slide}>
-                    <Text style={styles.regularBold}>Fds-Travel S.A</Text>
+                    <Text style={styles.regularBold}>Sea Cucumber</Text>
                     <Image
-                        source={require('../../../app/assets/images/travel-agencies/fds-travel/3.jpg')}
+                        source={require('../../../app/assets/images/endangered/seaCucumber.png')}
                         style={styles.slideImage}
                     />  
                 </View>
                 <View style={styles.slide}>
-                    <Text style={styles.regularBold}>Fds-Travel S.A</Text>
+                    <Text style={styles.regularBold}>Giant Tortoise</Text>
                     <Image
-                        source={require('../../../app/assets/images/travel-agencies/fds-travel/4.jpg')}
+                        source={require('../../../app/assets/images/endangered/giantTortoise.jpg')}
+                        style={styles.slideImage}
+                    />  
+                </View>
+                <View style={styles.slide}>
+                    <Text style={styles.regularBold}>Albatross</Text>
+                      <Image
+                          source={require('../../../app/assets/images/endangered/albatross.jpg')}
+                          style={styles.slideImage}
+                      />
+                </View>
+                <View style={styles.slide}>
+                    <Text style={styles.regularBold}>Endemic Rats</Text>
+                    <Image
+                        source={require('../../../app/assets/images/endangered/rat.jpg')}
+                        style={styles.slideImage}
+                    />        
+                </View>
+                <View style={styles.slide}>
+                    <Text style={styles.regularBold}>Mangrove Finch</Text>
+                    <Image
+                        source={require('../../../app/assets/images/endangered/mangroveFinch.jpg')}
+                        style={styles.slideImage}
+                    />  
+                </View>
+                <View style={styles.slide}>
+                    <Text style={styles.regularBold}>Hawk</Text>
+                    <Image
+                        source={require('../../../app/assets/images/endangered/hawk.jpg')}
+                        style={styles.slideImage}
+                    />  
+                </View>
+                <View style={styles.slide}>
+                    <Text style={styles.regularBold}>Sea Turtle</Text>
+                    <Image
+                        source={require('../../../app/assets/images/endangered/turtle.jpg')}
+                        style={styles.slideImage}
+                    />  
+                </View>
+                <View style={styles.slide}>
+                    <Text style={styles.regularBold}>Reef Shark</Text>
+                    <Image
+                        source={require('../../../app/assets/images/endangered/reefSharks.jpg')}
                         style={styles.slideImage}
                     />  
                 </View>

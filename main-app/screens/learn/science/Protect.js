@@ -50,8 +50,8 @@ class Protect extends React.Component {
                   <View>
                       <View style={styles.header}>
                           <Image
-                              source={require('../../../app/assets/icons/bike.png')}
-                              style={{width: 35*rem, height: 22*rem}}
+                              source={require('../../../app/assets/icons/protect.png')}
+                              style={{width: 32*rem, height: 26*rem}}
                           />
                           <Text style={styles.headerText}>How to Protect</Text>
                       </View>
