@@ -15,6 +15,7 @@ import {
     Linking
 } from 'react-native';
 import { any } from 'prop-types';
+import OpenMap from "react-native-open-map";
 
 //get scaling factors
 const entireScreenWidth = Dimensions.get('window').width;
@@ -222,11 +223,15 @@ class IslandHop extends React.Component {
             </TouchableOpacity>
           </View>
               <View style={styles.lastRow}>
-                  <Image
-                  source={require('../../../app/assets/icons/location_gray.png')}
-                  style={styles.infoAddress}
-              />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -263,28 +268,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526356}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${kmartinez@oagalapagos.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.oceanadventures.com.ec')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -321,28 +342,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526356}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${jceli@oagalapagos.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.oceanadventures.com.ec')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -379,28 +416,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59323809680}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${haguirre@xpedition.com.ec}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.celebritycruises.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -437,28 +490,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526159}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -495,28 +564,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526157}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -547,28 +632,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -593,28 +694,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -651,28 +768,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -709,28 +842,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -767,28 +916,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -825,28 +990,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -883,28 +1064,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -929,28 +1126,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -975,28 +1188,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1033,28 +1262,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1091,28 +1336,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1149,28 +1410,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1207,28 +1484,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1265,28 +1558,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1323,28 +1632,44 @@ class IslandHop extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59322986570}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      <Image
+                          source={require('../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.ecuadorable.com')}>
+                      <Image
+                          source={require('../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}

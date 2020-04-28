@@ -15,6 +15,7 @@ import {
     Linking
 } from 'react-native';
 import { any } from 'prop-types';
+import OpenMap from "react-native-open-map";
 
 //get scaling factors
 const entireScreenWidth = Dimensions.get('window').width;
@@ -222,11 +223,15 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -292,11 +297,15 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -353,7 +362,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('https:hotel.santafegalapagos.com.ec')}>
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
                       <Image
                           source={require('../../../../app/assets/icons/www_gray.png')}
                           style={styles.infoWeb}
@@ -362,11 +371,15 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -432,11 +445,15 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -501,12 +518,15 @@ class SantaCruzHotels extends React.Component {
                       <Text style={styles.infoText}>Website</Text>
                   </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+          <TouchableOpacity
+              style = {{flexDirection: "row"}}
+              onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+              <Image
+                  source={require('../../../../app/assets/icons/location_gray.png')}
+                  style={styles.infoAddress}
+              />
+              <Text style={styles.infoText}>Locate</Text>
+          </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -572,11 +592,15 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -642,19 +666,21 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
                   />
                   <Text style={styles.infoText}>Favorite</Text>
               </View>
-
-
               <Text style={styles.regularBold}>Casa de Huéspedes Cozy Galapagos</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
                 <View style={styles.slide}>
@@ -683,28 +709,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59353013843}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${peladoda@yahoo.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -741,28 +783,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526502}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${galapagoscottages@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https: www.galapagoscottages.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -799,36 +857,50 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352524730}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${galapagos.native@gmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
                   />
                   <Text style={styles.infoText}>Favorite</Text>
               </View>
-
-
               <Text style={styles.regularBold}>Hotel Galapagos Suites</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
                 <View style={styles.slide}>
@@ -857,28 +929,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526209}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${reservas@galapagossuites.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.galapagossuites.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -915,28 +1003,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352527244}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${alekrc@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -973,28 +1077,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352527212}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${casacascada_galapagos@hotmail.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https://galapagostour.org/socios-capturgal/')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1031,28 +1151,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526108}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${info@hotelespanagalapagos.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.hotelespanagalapagos.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1089,28 +1225,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1147,28 +1299,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1205,28 +1373,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1263,28 +1447,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1321,28 +1521,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1380,28 +1596,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1438,28 +1670,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1496,28 +1744,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1554,28 +1818,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1612,28 +1892,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1670,28 +1966,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1728,28 +2040,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1786,28 +2114,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1844,28 +2188,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1902,28 +2262,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1960,28 +2336,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -2018,28 +2410,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -2076,28 +2484,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -2134,28 +2558,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -2192,28 +2632,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -2250,28 +2706,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -2308,28 +2780,44 @@ class SantaCruzHotels extends React.Component {
                 </View>
               </Swiper>
               <View style={styles.numberRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/phone.png')}
-                      style={styles.infoPhone}
-                  />
-                  <Text style={styles.infoText}>Call</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/email.png')}
-                      style={styles.infoEmail}
-                  />
-                  <Text style={styles.infoText}>Email</Text>
-                  <Image
-                      source={require('../../../../app/assets/icons/www_gray.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Website</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('tel:${59352526297}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/phone.png')}
+                          style={styles.infoPhone}
+                      />
+                      <Text style={styles.infoText}>Call</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('mailto:${manager@finchbayhotel.com}')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/email.png')}
+                          style={styles.infoEmail}
+                      />
+                      <Text style={styles.infoText}>Email</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => Linking.openURL('https:www.finchbayhotel.com')}>
+                      <Image
+                          source={require('../../../../app/assets/icons/www_gray.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Website</Text>
+                  </TouchableOpacity>
               </View>
-              <View style={styles.lastRow}>
+          <View style={styles.lastRow}>
+              <TouchableOpacity
+                  style = {{flexDirection: "row"}}
+                  onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
                       source={require('../../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
+              </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}

@@ -3,6 +3,7 @@ import 'react-native-gesture-handler';
 import Swiper from 'react-native-swiper';
 import * as React from 'react';
 import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView, Linking} from 'react-native';
+import OpenMap from "react-native-open-map";
 import { any } from 'prop-types';
 
 //get scaling factors
@@ -211,11 +212,15 @@ class SantaCruzFood extends React.Component {
                  </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -281,11 +286,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7448105, longitude: -90.3139175 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -483,11 +492,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -553,10 +566,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Text style={styles.infoText}>Locate</Text>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
@@ -624,11 +642,15 @@ class SantaCruzFood extends React.Component {
 
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -694,11 +716,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -764,11 +790,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -834,11 +864,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -904,11 +938,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -974,11 +1012,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
@@ -1044,11 +1086,15 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
               </View>
               <View style={styles.lastRow}>
-                  <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
-                      style={styles.infoAddress}
-                  />
-                  <Text style={styles.infoText}>Locate</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
+                      <Image
+                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          style={styles.infoAddress}
+                      />
+                      <Text style={styles.infoText}>Locate</Text>
+                  </TouchableOpacity>
                   <Image
                       source={require('../../../../app/assets/icons/turtleBW.png')}
                       style={styles.infoWeb}
