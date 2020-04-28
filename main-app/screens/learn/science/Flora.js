@@ -24,40 +24,39 @@ const styles = StyleSheet.create ({
     },
     bodyContainer:{
         paddingHorizontal: 33*rem,
-        paddingBottom: 52*rem
+        paddingBottom: 40*rem
     },
     subHeader:{
         fontWeight: '600',
         color: '#000000',
         fontSize: 17*rem,
         paddingLeft: 34,
-        paddingTop: 16,
         paddingBottom: 16
     },
     bodyText:{
         fontSize: 17*rem,
         color: '#616161',
-        lineHeight: 22 * rem
+        lineHeight: 22 * rem,
     }
 });
 
 class Flora extends React.Component {
     render(){
     return (
-          <View style={styles.container}>
+        <ScrollView style={styles.container}>
+          <View>
               <View style={styles.header}>
                   <Image
-                      source={require('../../../app/assets/icons/bike.png')}
-                      style={{width: 35*rem, height: 22*rem}}
+                      source={require('../../../app/assets/icons/flora.png')}
+                      style={{width: 30*rem, height: 30*rem}}
                   />
                   <Text style={styles.headerText}>Flora</Text>
               </View>
               <Image
-                  source={require('../../../app/assets/images/headerImage.png')}
-                  style={{width: entireScreenWidth, height: 81*rem}}
-              />
+              source={require('../../../app/assets/images/headerImage_short.png')}
+              style={{width: entireScreenWidth, height: 25*rem, marginBottom: 34}}
+            />
               <SafeAreaView style={styles.container}>
-                  <ScrollView>
                       <View style={styles.bodyContainer}>
                       <Text style={styles.bodyText}>Scientifically, it is known that the Galapagos flora has managed to grow thanks to the winds, the
                           transport of the seeds in the legs and digestive tract of the animals, and through floating rafts that
@@ -76,15 +75,16 @@ class Flora extends React.Component {
                       <Text style={styles.bodyText}>In the arid zone we find the three species of cactus on the islands: Opuntia, Candelabra and Lava,
                           which provide food for iguanas and land turtles.</Text>
                       </View>
-                      <Text style={styles.subHeader}>Arid Zone</Text>
+                      <Text style={styles.subHeader}>Humid Zone</Text>
                       <View style={styles.bodyContainer}>
                       <Text style={styles.bodyText}>In the humid zone we find a microclimate very similar to that of the cloud forests, and that has
                           created great distance with the arid zone. This area has ferns, orchids, moss, lichen, cat's claw and
                           other plants. </Text>
                       </View>
-                  </ScrollView>
               </SafeAreaView>
       </View>
+      </ScrollView>
+
     );
     }
 }

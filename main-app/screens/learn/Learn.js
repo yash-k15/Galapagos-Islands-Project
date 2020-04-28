@@ -69,8 +69,8 @@ class Learn extends React.Component {
             onPress={() => this.props.navigation.navigate("AboutUs")}>
             <View style={styles.buttonLeft}>
                 <Image
-                    source={require('../../app/assets/icons/knowBefore_gray.png')}
-                    style={{width: 28*rem, height: 28*rem}}
+                    source={require('../../app/assets/icons/aboutUs_gray.png')}
+                    style={{width: 31*rem, height: 25*rem}}
                 />
                 <Text style={styles.buttonText}>About Us</Text>
             </View>
@@ -86,8 +86,8 @@ class Learn extends React.Component {
             onPress={() => this.props.navigation.navigate("ScienceAndSus")}>
             <View style={styles.buttonLeft}>
                 <Image
-                      source={require('../../app/assets/icons/plan_gray.png')}
-                      style={{width: 28*rem, height: 31*rem}}
+                      source={require('../../app/assets/icons/scienceAndSus_gray.png')}
+                      style={{width: 31*rem, height: 27*rem}}
                 />                  
                 <Text style={styles.buttonText}>Science & Sustainability</Text>
               </View>
@@ -104,8 +104,8 @@ class Learn extends React.Component {
             onPress={() => this.props.navigation.navigate("History")}>
             <View style={styles.buttonLeft}>
                 <Image
-                      source={require('../../app/assets/icons/plan_gray.png')}
-                      style={{width: 28*rem, height: 31*rem}}
+                      source={require('../../app/assets/icons/history_gray.png')}
+                      style={{width: 27*rem, height: 28*rem}}
                 />                  
                 <Text style={styles.buttonText}>History</Text>
               </View>
