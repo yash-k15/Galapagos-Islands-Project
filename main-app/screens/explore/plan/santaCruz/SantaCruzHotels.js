@@ -205,7 +205,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${angercontabilidad@gmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:angercontabilidad@gmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -279,7 +279,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${recepcion@santafegalapagos.com.ec}')}>
+                      onPress={() => Linking.openURL('mailto:recepcion@santafegalapagos.com.ec')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -353,7 +353,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${bayviewhouse2013@gmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:bayviewhouse2013@gmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -427,7 +427,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${bookings@blueherongalapagos.com}')}>
+                      onPress={() => Linking.openURL('mailto:bookings@blueherongalapagos.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -501,7 +501,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@galapagossafaricamp.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@galapagossafaricamp.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -574,7 +574,7 @@ class SantaCruzHotels extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${galapagostwinsuites@gmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:galapagostwinsuites@gmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -2998,9 +2998,6 @@ class SantaCruzHotels extends React.Component {
                   />
                   <Text style={styles.infoText}>Favorite</Text>
               </View>
-
-      
-      </View>
       </ScrollView>
       </SafeAreaView>
     );

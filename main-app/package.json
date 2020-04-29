@@ -17,6 +17,7 @@
     "expo": "~36.0.0",
     "font-awesome": "^4.7.0",
     "native-base": "2.13.8",
+    "opencollective-postinstall": "^2.0.2",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",

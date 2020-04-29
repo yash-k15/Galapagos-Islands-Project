@@ -205,7 +205,7 @@ class TravelAgencies extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@fdstravel.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@fdstravel.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -227,7 +227,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -279,7 +279,7 @@ class TravelAgencies extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@fdstravel.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@fdstravel.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -301,7 +301,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -353,7 +353,7 @@ class TravelAgencies extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@fdstravel.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@fdstravel.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -375,7 +375,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -427,7 +427,7 @@ class TravelAgencies extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@fdstravel.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@fdstravel.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -449,7 +449,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -547,7 +547,7 @@ class TravelAgencies extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@fdstravel.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@fdstravel.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -569,7 +569,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -615,7 +615,7 @@ class TravelAgencies extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${info@fdstravel.com}')}>
+                      onPress={() => Linking.openURL('mailto:info@fdstravel.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -637,7 +637,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -699,7 +699,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -767,7 +767,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -835,7 +835,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -909,7 +909,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -983,7 +983,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1057,7 +1057,7 @@ class TravelAgencies extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>

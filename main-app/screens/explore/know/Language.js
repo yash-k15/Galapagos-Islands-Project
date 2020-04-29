@@ -14,7 +14,8 @@ rem = entireScreenWidth / 350;
 const styles = StyleSheet.create ({
     container: {
         backgroundColor: 'white', 
-        flex: 1
+        flex: 1,
+
     },
     header:{
         flexDirection: 'row',
@@ -153,6 +154,7 @@ const styles = StyleSheet.create ({
         marginBottom: 5,
         marginTop: 30,
         backgroundColor: 'rgba(247,247,247,1.0)',
+        flexDirection: "row"
     },
     item: {
         padding: 10,
@@ -162,6 +164,7 @@ const styles = StyleSheet.create ({
         paddingLeft: 34,
         paddingRight: 34,
         flexWrap: "wrap",
+        flexDirection: "row"
     },
     lists: {
         marginBottom: 30,
@@ -175,7 +178,7 @@ class Language extends React.Component {
     return (
       <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
-      <View style={{backgroundColor: 'white', flex: 1}}>
+      <View style={{backgroundColor: 'white', flex: 1,}}>
           <View style={styles.header}>
               <Image
                   source={require('../../../app/assets/icons/alphabet.png')}
@@ -191,7 +194,6 @@ class Language extends React.Component {
             <Text style={styles.regular}>
                 Check out the top phrases in Spanish for travelers heading to the Galapagos Islands:    
             </Text>
-
             <SectionList
                 style={styles.lists}
                 sections={[
@@ -204,9 +206,7 @@ class Language extends React.Component {
                 renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
                 keyExtractor={(item, index) => index}
             />
-
-      
-      </View>
+            </View>
       </ScrollView>
       </SafeAreaView>
     );

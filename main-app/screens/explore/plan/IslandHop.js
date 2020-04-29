@@ -227,7 +227,7 @@ class IslandHop extends React.Component {
                       style = {{flexDirection: "row"}}
                       onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                       <Image
-                          source={require('../../../../app/assets/icons/location_gray.png')}
+                          source={require('../../../app/assets/icons/location_gray.png')}
                           style={styles.infoAddress}
                       />
                       <Text style={styles.infoText}>Locate</Text>
@@ -301,7 +301,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -375,7 +375,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -449,7 +449,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -523,7 +523,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -597,7 +597,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -665,7 +665,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -727,7 +727,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -801,7 +801,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -875,7 +875,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -949,7 +949,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1023,7 +1023,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1097,7 +1097,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1159,7 +1159,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1221,7 +1221,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1295,7 +1295,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1369,7 +1369,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1443,7 +1443,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1517,7 +1517,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1591,7 +1591,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>
@@ -1665,7 +1665,7 @@ class IslandHop extends React.Component {
                   style = {{flexDirection: "row"}}
                   onPress={() => OpenMap.show({ latitude: -0.7449591, longitude: -90.3152868 })}>
                   <Image
-                      source={require('../../../../app/assets/icons/location_gray.png')}
+                      source={require('../../../app/assets/icons/location_gray.png')}
                       style={styles.infoAddress}
                   />
                   <Text style={styles.infoText}>Locate</Text>

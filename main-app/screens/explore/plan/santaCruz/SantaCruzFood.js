@@ -268,7 +268,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${elisagps@gmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:elisagps@gmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -334,7 +334,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:{gerencia@electronautica.com.ec}')}>
+                      onPress={() => Linking.openURL('mailto:gerencia@electronautica.com.ec')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -404,7 +404,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${reservas@elmuellededarwin.com}')}>
+                      onPress={() => Linking.openURL('mailto:reservas@elmuellededarwin.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -474,7 +474,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${loylococinaecuatoriana@gmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:loylococinaecuatoriana@gmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -548,7 +548,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${selvapro2014@hotmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:selvapro2014@hotmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -623,7 +623,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${reservasbahiamar@gmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:reservasbahiamar@gmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -698,7 +698,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${selvapro2010@hotmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:selvapro2010@hotmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -772,7 +772,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ilgiardinogalapagos@hotmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:ilgiardinogalapagos@hotmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -846,7 +846,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${islagrillgalapagos@hotmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:islagrillgalapagos@hotmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -920,7 +920,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${garrapata.restaurant@hotmail.com}')}>
+                      onPress={() => Linking.openURL('mailto:garrapata.restaurant@hotmail.com')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1068,7 +1068,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ventas@proinsular.com.ec}')}>
+                      onPress={() => Linking.openURL('mailto:ventas@proinsular.com.ec')}>
                       <Image
                           source={require('../../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
