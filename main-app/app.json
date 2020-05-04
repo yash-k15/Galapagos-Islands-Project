@@ -25,11 +25,11 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bunderIdentifier": "galapago",
+      "bundleIdentifier": "galapago",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "galapago",
+      "package": "host.fih.galapago",
       "versionCode": 1
     }
   }
