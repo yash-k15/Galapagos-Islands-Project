@@ -1,0 +1,29 @@
+{
+  "name": "Galapagos-Islands-Project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "web_app_test.js",
+  "dependencies": {
+    "expo": "^37.0.8",
+    "react-native": "^0.62.2",
+    "react-native-open-map": "^3.0.2",
+    "react-native-splash-screen": "^3.2.0",
+    "react-navigation-tabs": "^2.7.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catrinanguyen/Galapagos-Islands-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catrinanguyen/Galapagos-Islands-Project/issues"
+  },
+  "homepage": "https://github.com/catrinanguyen/Galapagos-Islands-Project#readme"
+}
