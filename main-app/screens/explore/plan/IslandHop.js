@@ -205,7 +205,7 @@ class IslandHop extends React.Component {
               </TouchableOpacity>
             <TouchableOpacity
               style = {{flexDirection: "row"}}
-              onPress={() => Linking.openURL('mailto:${ventas@santafegalapagos.com.ec}')}>
+              onPress={() => Linking.openURL('mailto:ventas@santafegalapagos.com.ec')}>
               <Image
                   source={require('../../../app/assets/icons/email.png')}
                   style={styles.infoEmail}
@@ -279,7 +279,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${kmartinez@oagalapagos.com}')}>
+                      onPress={() => Linking.openURL('mailto:kmartinez@oagalapagos.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -353,7 +353,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${jceli@oagalapagos.com}')}>
+                      onPress={() => Linking.openURL('mailto:jceli@oagalapagos.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -427,7 +427,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${haguirre@xpedition.com.ec}')}>
+                      onPress={() => Linking.openURL('mailto:haguirre@xpedition.com.ec')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -501,7 +501,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -575,7 +575,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -643,7 +643,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -705,7 +705,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -779,7 +779,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -853,7 +853,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -927,7 +927,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1001,7 +1001,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1075,7 +1075,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1137,7 +1137,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1199,7 +1199,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1273,7 +1273,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1347,7 +1347,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1421,7 +1421,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1495,7 +1495,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1569,7 +1569,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
@@ -1643,7 +1643,7 @@ class IslandHop extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${ebrito@metropolitan-touring.com}')}>
+                      onPress={() => Linking.openURL('mailto:ebrito@metropolitan-touring.com')}>
                       <Image
                           source={require('../../../app/assets/icons/email.png')}
                           style={styles.infoEmail}
