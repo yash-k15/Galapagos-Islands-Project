@@ -117,6 +117,16 @@ const styles = StyleSheet.create ({
     entryBox:{
         paddingLeft: 15,
         paddingVertical: 30*rem
+    },
+    slideImage: {
+        alignItems: "center",
+        height: 250*rem,
+        width: Dimensions.get('window').width,
+    },
+    slide: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: Dimensions.get('window').width,
     }
 });
 
@@ -124,24 +134,190 @@ const styles = StyleSheet.create ({
 class Favorites extends React.Component {
     constructor(props){
         super(props);
-        this.Food = this.Rerender();
+        this.State = {
+            Food: null,
+            Hotel: null
+        }
     }
-    removeFavorites(){};
+    removeFavorites(type, key){
+        let ok = AsyncStorage.removeItem(type)
+    };
      async SomeMethod(){
-            let value = await AsyncStorage.getItem('Food');
-            if (value !== null) {
-                this.Food = JSON.parse(value);
+            let valueOfFood = await AsyncStorage.getItem('Food');
+            let valueOfHotel =  await AsyncStorage.getItem('Hotel');
+            if (valueOfFood !== null) {
+                this.State.Food = JSON.parse(valueOfFood);
             }
             else{
-                this.Food = {Name: "Nothing here yet!"};
+                this.State.Food = null;
             }
-            console.log(this.Food);
+            console.log(this.State.Food);
+             if (valueOfHotel !== null) {
+                 this.State.Hotel = JSON.parse(valueOfHotel);
+             }
+             else{
+                 this.State.Hotel = null;
+             }
+             console.log(this.State.Hotel);
     };
     async Rerender() {
         await this.SomeMethod();
         this.forceUpdate();
     };
   render(){
+      let foodContent = [];
+      let hotelContent = [];
+
+      if (this.State.Food == null){
+          foodContent.push(
+              <>
+                  <View style={styles.entryBox}>
+                  <Text>Nothing here yet!</Text>
+                  </View>
+              </>
+          );
+      }
+      else{
+          for ( let [key, value] of Object.entries(this.State.Food)) {
+              let image = value.Image;
+              foodContent.push(
+                  <>
+                      <Text style={styles.regularBold}>{key}</Text>
+                      <View style={styles.slide}>
+                          <Image
+                              source={{image}}
+                              style={styles.slideImage}
+                          />
+                      </View>
+                      <View style={styles.numberRow}>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => Linking.openURL('tel:${59352526627}')}>
+                              <Image
+                                  source={require('../../app/assets/icons/phone.png')}
+                                  style={styles.infoPhone}
+                              />
+                              <Text style={styles.infoText}>Call</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => Linking.openURL('mailto:' + value.Mail)}>
+                              <Image
+                                  source={require('../../app/assets/icons/email.png')}
+                                  style={styles.infoEmail}
+                              />
+                              <Text style={styles.infoText}>Email</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => Linking.openURL(value.Website)}>
+                              <Image
+                                  source={require('../../app/assets/icons/www_gray.png')}
+                                  style={styles.infoWeb}
+                              />
+                              <Text style={styles.infoText}>Website</Text>
+                          </TouchableOpacity>
+                      </View>
+                      <View style={styles.lastRow}>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => OpenMap.show({ latitude: value.Latitude, longitude: value.Longitude })}>
+                              <Image
+                                  source={require('../../app/assets/icons/location_gray.png')}
+                                  style={styles.infoAddress}
+                              />
+                              <Text style={styles.infoText}>Locate</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={this.removeFavorites("Food", key)}>
+                              <Image
+                                  source={require('../../app/assets/icons/turtleBW.png')}
+                                  style={styles.infoWeb}
+                              />
+                              <Text style={styles.infoText}>Unfavorite</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </>
+              );
+          }
+      }
+
+      if (this.State.Hotel == null){
+          hotelContent.push(
+              <>
+                  <View style={styles.entryBox}>
+                    <Text>Nothing here yet!</Text>
+                  </View>
+                  </>
+          );
+      }
+      else{
+          for ( let [key, value] of Object.entries(this.State.Hotel)) {
+              let hotelImage = value.Image;
+              hotelContent.push(
+                  <>
+                      <Text style={styles.regularBold}>{key}</Text>
+                      <View style={styles.slide}>
+                          <Image
+                              source={{hotelImage}}
+                              style={styles.slideImage}
+                          />
+                      </View>
+                      <View style={styles.numberRow}>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => Linking.openURL('tel:${59352526627}')}>
+                              <Image
+                                  source={require('../../app/assets/icons/phone.png')}
+                                  style={styles.infoPhone}
+                              />
+                              <Text style={styles.infoText}>Call</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => Linking.openURL('mailto:' + value.Mail)}>
+                              <Image
+                                  source={require('../../app/assets/icons/email.png')}
+                                  style={styles.infoEmail}
+                              />
+                              <Text style={styles.infoText}>Email</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => Linking.openURL(value.Website)}>
+                              <Image
+                                  source={require('../../app/assets/icons/www_gray.png')}
+                                  style={styles.infoWeb}
+                              />
+                              <Text style={styles.infoText}>Website</Text>
+                          </TouchableOpacity>
+                      </View>
+                      <View style={styles.lastRow}>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={() => OpenMap.show({ latitude: value.Latitude, longitude: value.Longitude })}>
+                              <Image
+                                  source={require('../../app/assets/icons/location_gray.png')}
+                                  style={styles.infoAddress}
+                              />
+                              <Text style={styles.infoText}>Locate</Text>
+                          </TouchableOpacity>
+                          <TouchableOpacity
+                              style = {{flexDirection: "row"}}
+                              onPress={this.removeFavorites("Food", key)}>
+                              <Image
+                                  source={require('../../app/assets/icons/turtleBW.png')}
+                                  style={styles.infoWeb}
+                              />
+                              <Text style={styles.infoText}>Unfavorite</Text>
+                          </TouchableOpacity>
+                      </View>
+                  </>
+              );
+          }
+      }
+
     return (
         <View style={{backgroundColor: 'white', flex: 1}}>
         <Text style={styles.header}>Favorites</Text>
@@ -150,6 +326,13 @@ class Favorites extends React.Component {
             style={{width: entireScreenWidth, height: 25*rem}}
         />
         <ScrollView style={styles.container}>
+            <View style={{alignContent: "center"}}>
+            <TouchableOpacity
+                style = {{flexDirection: "row"}}
+                onPress={() => this.Rerender()}>
+                <Text style={styles.infoText}>Refresh Page!</Text>
+            </TouchableOpacity>
+            </View>
             <View style={{borderBottomWidth: 2, borderColor: '#27C4CC', flexDirection: "row", alignItems: 'center', paddingLeft: 20}}>
                 <Image
                     source={require('../../app/assets/icons/bed.png')}
@@ -157,9 +340,7 @@ class Favorites extends React.Component {
                 />
                 <Text style={styles.subHeader}>Hotels</Text>
             </View>
-            <View style={styles.entryBox}>
-                <Text> Nothing here yet! </Text>
-            </View>
+                {hotelContent}
             <View style={{borderBottomWidth: 2, borderColor: '#27C4CC', flexDirection: "row", alignItems: 'center', paddingLeft: 20}}>
                 <Image
                     source={require('../../app/assets/icons/food.png')}
@@ -167,9 +348,7 @@ class Favorites extends React.Component {
                 />
                 <Text style={styles.subHeader}>Food & Drinks</Text>
             </View>
-            <View style={styles.entryBox}>
-                <Text> Nothing here yet! </Text>
-            </View>
+                {foodContent}
         </ScrollView>
         </View>
     );

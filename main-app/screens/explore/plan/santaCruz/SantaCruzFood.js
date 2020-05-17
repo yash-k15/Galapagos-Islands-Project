@@ -4,6 +4,7 @@ import Swiper from 'react-native-swiper';
 import * as React from 'react';
 import {StyleSheet, Button, Text, View, TouchableOpacity, Image, Dimensions, SafeAreaView, ScrollView, Linking} from 'react-native';
 import OpenMap from "react-native-open-map";
+import { AsyncStorage } from 'react-native';
 import { any } from 'prop-types';
 
 //get scaling factors
@@ -138,6 +139,20 @@ const styles = StyleSheet.create ({
 });
 
 class SantaCruzFood extends React.Component {
+    async addToFavorites(name,info){
+        let value = await AsyncStorage.getItem('Food');
+        let new_value;
+        if (value !== null) {
+            new_value = JSON.parse(value);
+            new_value[name] = info;
+        }
+        else{
+            new_value = {};
+            new_value[name] = info
+        }
+        console.log(new_value);
+        await AsyncStorage.setItem('Food', JSON.stringify(new_value))
+    };
   render(){
     return (
       <SafeAreaView style={styles.container}>
@@ -158,10 +173,10 @@ class SantaCruzFood extends React.Component {
               <Text style={styles.regularBold}>1835 Coffee Lab</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
                 <View style={styles.slide}>
-                      <Image
-                          source={require('../../../../app/assets/images/food/1835-coffee-lab/1.jpg')}
-                          style={styles.slideImage}
-                      />
+                    <Image
+                        source={require('../../../../app/assets/images/food/1835-coffee-lab/1.jpg')}
+                        style={styles.slideImage}
+                    />
                 </View>
                 <View style={styles.slide}>
                     <Image
@@ -194,7 +209,7 @@ class SantaCruzFood extends React.Component {
                   </TouchableOpacity>
                   <TouchableOpacity
                       style = {{flexDirection: "row"}}
-                      onPress={() => Linking.openURL('mailto:${oficina@1835coffeelabec.com}')}>
+                      onPress={() => Linking.openURL('mailto:oficina@1835coffeelabec.com')}>
                     <Image
                         source={require('../../../../app/assets/icons/email.png')}
                         style={styles.infoEmail}
@@ -221,13 +236,18 @@ class SantaCruzFood extends React.Component {
                       />
                       <Text style={styles.infoText}>Locate</Text>
                   </TouchableOpacity>
-                  <Image
-                      source={require('../../../../app/assets/icons/turtleBW.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Favorite</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => this.addToFavorites( "Coffee Lab",{Name: "Coffee Lab",
+                          Latitude: "-0.7449591", Longitude: "-90.3152", Mail: "oficina@1835coffeelabec.com",
+                          Website: "https:www.coffeelabec.com", Phone: "59352526627", Image:"/../../app/assets/images/food/1835-coffee-lab/1.jpg"})}>
+                      <Image
+                          source={require('../../../../app/assets/icons/turtleBW.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Favorites</Text>
+                  </TouchableOpacity>
               </View>
-
 
               <Text style={styles.regularBold}>Bar Bongo</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>
@@ -295,11 +315,17 @@ class SantaCruzFood extends React.Component {
                       />
                       <Text style={styles.infoText}>Locate</Text>
                   </TouchableOpacity>
-                  <Image
-                      source={require('../../../../app/assets/icons/turtleBW.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Favorite</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => this.addToFavorites( "Bar Bongo",{Name: "Bar Bongo",
+                          Latitude: "-0.7449591", Longitude: "-90.3152", Mail: "elisagps@gmail.com",
+                          Website: "https://galapagostour.org/socios-capturgal/",  Phone: "59352527520", Image:'../../app/assets/images/food/bar-bongo/1.jpg'})}>
+                      <Image
+                          source={require('../../../../app/assets/icons/turtleBW.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Favorites</Text>
+                  </TouchableOpacity>
               </View>
               <Text style={styles.regularBold}>Discoteca La Panga</Text>
               <Swiper style={styles.wrapper} showsButtons={true}>

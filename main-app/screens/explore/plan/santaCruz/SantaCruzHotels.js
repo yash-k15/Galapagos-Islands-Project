@@ -12,7 +12,7 @@ import {
     Dimensions,
     SafeAreaView,
     ScrollView,
-    Linking
+    Linking, AsyncStorage
 } from 'react-native';
 import { any } from 'prop-types';
 import OpenMap from "react-native-open-map";
@@ -149,6 +149,20 @@ const styles = StyleSheet.create ({
 });
 
 class SantaCruzHotels extends React.Component {
+    async addToFavorites(name,info){
+        let value = await AsyncStorage.getItem('Hotel');
+        let new_value;
+        if (value !== null) {
+            new_value = JSON.parse(value);
+            new_value[name] = info;
+        }
+        else{
+            new_value = {};
+            new_value[name] = info
+        }
+        console.log(new_value);
+        await AsyncStorage.setItem('Hotel', JSON.stringify(new_value))
+    };
   render(){
     return (
       <SafeAreaView style={styles.container}>
@@ -232,11 +246,17 @@ class SantaCruzHotels extends React.Component {
                       />
                       <Text style={styles.infoText}>Locate</Text>
                   </TouchableOpacity>
-                  <Image
-                      source={require('../../../../app/assets/icons/turtleBW.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Favorite</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => this.addToFavorites( "Hotel Angermeyer Water Front Inn",{
+                          Latitude: "-0.7449591", Longitude: "-90.3152", Mail: "angercontabilidad@gmail.com",
+                          Website: "www.angermeyer-waterfront-inn.com", Phone: "59352526561", Image: "../../app/assets/images/hotels/angermeyer/1.jpg"})}>
+                      <Image
+                          source={require('../../../../app/assets/icons/turtleBW.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Favorites</Text>
+                  </TouchableOpacity>
               </View>
 
 
@@ -306,11 +326,17 @@ class SantaCruzHotels extends React.Component {
                       />
                       <Text style={styles.infoText}>Locate</Text>
                   </TouchableOpacity>
-                  <Image
-                      source={require('../../../../app/assets/icons/turtleBW.png')}
-                      style={styles.infoWeb}
-                  />
-                  <Text style={styles.infoText}>Favorite</Text>
+                  <TouchableOpacity
+                      style = {{flexDirection: "row"}}
+                      onPress={() => this.addToFavorites( "Hotel Santa Fé",{
+                          Latitude: "-0.7449591", Longitude: "-90.3152", Mail: "angercontabilidad@gmail.com",
+                          Website: "www.angermeyer-waterfront-inn.com", Phone: "59352526561", Image: "../../app/assets/images/hotels/santa-fe/1.jpg"})}>
+                      <Image
+                          source={require('../../../../app/assets/icons/turtleBW.png')}
+                          style={styles.infoWeb}
+                      />
+                      <Text style={styles.infoText}>Favorites</Text>
+                  </TouchableOpacity>
               </View>
 
 
