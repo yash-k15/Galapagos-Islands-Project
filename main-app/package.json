@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "latest",
-    "@react-native-community/async-storage": "^1.10.1",
+    "@react-native-community/async-storage": "^1.10.3",
     "@react-native-community/masked-view": "0.1.5",
     "@react-navigation/bottom-tabs": "^5.0.5",
     "@react-navigation/native": "^5.0.2",
