@@ -179,16 +179,9 @@ class Favorites extends React.Component {
       }
       else{
           for ( let [key, value] of Object.entries(this.State.Food)) {
-              let image = value.Image;
               foodContent.push(
                   <>
                       <Text style={styles.regularBold}>{key}</Text>
-                      <View style={styles.slide}>
-                          <Image
-                              source={{image}}
-                              style={styles.slideImage}
-                          />
-                      </View>
                       <View style={styles.numberRow}>
                           <TouchableOpacity
                               style = {{flexDirection: "row"}}
