@@ -139,26 +139,38 @@ class Favorites extends React.Component {
             Hotel: null
         }
     }
-    removeFavorites(type, key){
-        let ok = AsyncStorage.removeItem(type)
+    async removeFavorites(type, key){
+        let new_entries;
+        let entries =  await AsyncStorage.getItem(type);
+        let ok = await AsyncStorage.removeItem(type);
+
+        if (entries !== null) {
+            new_entries = JSON.parse(entries);
+            delete new_entries[key];
+        }
+        if (new_entries === {}){
+            await AsyncStorage.removeItem(type);
+            console.log("null reached!!")
+        }
+        else {
+            await AsyncStorage.setItem(type, JSON.stringify(new_entries));
+        }
     };
      async SomeMethod(){
             let valueOfFood = await AsyncStorage.getItem('Food');
             let valueOfHotel =  await AsyncStorage.getItem('Hotel');
-            if (valueOfFood !== null) {
+            if (valueOfFood !== null || Object.keys(valueOfFood).length === 0) {
                 this.State.Food = JSON.parse(valueOfFood);
             }
             else{
                 this.State.Food = null;
             }
-            console.log(this.State.Food);
-             if (valueOfHotel !== null) {
+             if (valueOfHotel !== null || Object.keys(valueOfHotel).length !== 0) {
                  this.State.Hotel = JSON.parse(valueOfHotel);
              }
              else{
                  this.State.Hotel = null;
              }
-             console.log(this.State.Hotel);
     };
     async Rerender() {
         await this.SomeMethod();
@@ -223,7 +235,7 @@ class Favorites extends React.Component {
                           </TouchableOpacity>
                           <TouchableOpacity
                               style = {{flexDirection: "row"}}
-                              onPress={this.removeFavorites("Food", key)}>
+                              onPress={() => this.removeFavorites("Food", key)}>
                               <Image
                                   source={require('../../app/assets/icons/turtleBW.png')}
                                   style={styles.infoWeb}
@@ -251,12 +263,6 @@ class Favorites extends React.Component {
               hotelContent.push(
                   <>
                       <Text style={styles.regularBold}>{key}</Text>
-                      <View style={styles.slide}>
-                          <Image
-                              source={{hotelImage}}
-                              style={styles.slideImage}
-                          />
-                      </View>
                       <View style={styles.numberRow}>
                           <TouchableOpacity
                               style = {{flexDirection: "row"}}
@@ -298,7 +304,7 @@ class Favorites extends React.Component {
                           </TouchableOpacity>
                           <TouchableOpacity
                               style = {{flexDirection: "row"}}
-                              onPress={this.removeFavorites("Food", key)}>
+                              onPress={() => this.removeFavorites("Hotel", key)}>
                               <Image
                                   source={require('../../app/assets/icons/turtleBW.png')}
                                   style={styles.infoWeb}
