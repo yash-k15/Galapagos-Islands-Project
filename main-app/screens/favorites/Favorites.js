@@ -18,6 +18,9 @@ let rem;
 rem = entireScreenWidth / 350;
 
 const styles = StyleSheet.create ({
+    hidden:{
+        display: "none"
+    },
     header: {
         fontSize: 34*rem,
         fontWeight: "600",
@@ -136,9 +139,19 @@ class Favorites extends React.Component {
         super(props);
         this.State = {
             Food: null,
-            Hotel: null
+            Hotel: null,
+            Time: new Date().toLocaleString()
         }
     }
+
+    UNSAFE_componentWillMount(){
+        setInterval(function(){
+            this.setState({
+                Time: new Date().toLocaleString()
+            })
+        }.bind(this), 3000);
+    }
+
     async removeFavorites(type, key){
         let new_entries;
         let entries =  await AsyncStorage.getItem(type);
@@ -156,29 +169,30 @@ class Favorites extends React.Component {
             await AsyncStorage.setItem(type, JSON.stringify(new_entries));
         }
     };
-     async SomeMethod(){
+     async GetFavorites(){
             let valueOfFood = await AsyncStorage.getItem('Food');
             let valueOfHotel =  await AsyncStorage.getItem('Hotel');
-            if (valueOfFood !== null || Object.keys(valueOfFood).length === 0) {
+            if (valueOfFood !== null && Object.keys(valueOfFood).length !== 2) {
                 this.State.Food = JSON.parse(valueOfFood);
             }
             else{
                 this.State.Food = null;
             }
-             if (valueOfHotel !== null || Object.keys(valueOfHotel).length !== 0) {
+            console.log(Object.keys(valueOfFood).length);
+            console.log(valueOfFood);
+             if (valueOfHotel !== null && Object.keys(valueOfHotel).length !== 2) {
                  this.State.Hotel = JSON.parse(valueOfHotel);
              }
              else{
                  this.State.Hotel = null;
              }
     };
-    async Rerender() {
-        await this.SomeMethod();
-        this.forceUpdate();
-    };
+
   render(){
       let foodContent = [];
       let hotelContent = [];
+
+      this.GetFavorites();
 
       if (this.State.Food == null){
           foodContent.push(
@@ -319,19 +333,15 @@ class Favorites extends React.Component {
 
     return (
         <View style={{backgroundColor: 'white', flex: 1}}>
+            <View style={styles.hidden}>
+            <Text>{this.State.Time}</Text>
+            </View>
         <Text style={styles.header}>Favorites</Text>
         <Image
             source={require('../../app/assets/images/headerImage_short.png')}
             style={{width: entireScreenWidth, height: 25*rem}}
         />
         <ScrollView style={styles.container}>
-            <View style={{alignContent: "center"}}>
-            <TouchableOpacity
-                style = {{flexDirection: "row"}}
-                onPress={() => this.Rerender()}>
-                <Text style={styles.infoText}>Refresh Page!</Text>
-            </TouchableOpacity>
-            </View>
             <View style={{borderBottomWidth: 2, borderColor: '#27C4CC', flexDirection: "row", alignItems: 'center', paddingLeft: 20}}>
                 <Image
                     source={require('../../app/assets/icons/bed.png')}
